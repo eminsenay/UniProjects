@@ -1,0 +1,1 @@
+-tapkeep -mode pipe -tcl -command C:/Programlar/Xilinx/data/projnav/_map.tcl _map.rsp queue cmd _map.log

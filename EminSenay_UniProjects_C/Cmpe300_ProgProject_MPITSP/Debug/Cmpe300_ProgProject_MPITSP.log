@@ -1,0 +1,17 @@
+﻿Build started 10/8/2011 6:01:28 PM.
+Project "C:\Users\Emin\documents\visual studio 2010\Projects\EminSenay_UniProjects_C\Cmpe300_ProgProject_MPITSP\Cmpe300_ProgProject_MPITSP.vcxproj" on node 2 (build target(s)).
+InitializeBuildStatus:
+  Creating "Debug\Cmpe300_ProgProject_MPITSP.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  All outputs are up-to-date.
+Link:
+  All outputs are up-to-date.
+  Cmpe300_ProgProject_MPITSP.vcxproj -> C:\Users\Emin\documents\visual studio 2010\Projects\EminSenay_UniProjects_C\Debug\Cmpe300_ProgProject_MPITSP.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\Cmpe300_ProgProject_MPITSP.unsuccessfulbuild".
+  Touching "Debug\Cmpe300_ProgProject_MPITSP.lastbuildstate".
+Done Building Project "C:\Users\Emin\documents\visual studio 2010\Projects\EminSenay_UniProjects_C\Cmpe300_ProgProject_MPITSP\Cmpe300_ProgProject_MPITSP.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.76

@@ -1,0 +1,142 @@
+# Reading c:/Modeltech_xe/win32xoem/../tcl/vsim/pref.tcl 
+# do qtest.fdo 
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity busdflipflop
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Compiling architecture behavioral of busdflipflop
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading entity busdflipflop
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity eighttoonebusmux
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Compiling architecture behavioral of eighttoonebusmux
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading entity eighttoonebusmux
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity pulsecatch
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Compiling architecture behavioral of pulsecatch
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading entity pulsecatch
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity threebitupdowncounter
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Compiling architecture behavioral of threebitupdowncounter
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading entity threebitupdowncounter
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity twotoonebusmux
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Compiling architecture behavioral of twotoonebusmux
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading entity twotoonebusmux
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vital_timing
+# -- Loading package vcomponents
+# -- Compiling entity queue
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Compiling architecture behavioral of queue
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vital_timing
+# -- Loading package vcomponents
+# -- Loading entity queue
+# -- Loading entity ibuf
+# -- Loading entity pulsecatch
+# -- Loading entity threebitupdowncounter
+# -- Loading entity twotoonebusmux
+# -- Loading entity busdflipflop
+# -- Loading entity eighttoonebusmux
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vital_timing
+# -- Loading package vcomponents
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity testbench
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Compiling architecture testbench_arch of testbench
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vital_timing
+# -- Loading package vcomponents
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading entity testbench
+# -- Loading entity queue
+# -- Compiling configuration queue_cfg
+# -- Loading entity testbench
+# -- Loading architecture testbench_arch of testbench
+# vsim -lib work -t 1ps -L xilinxcorelib testbench 
+# Warning: A ModelSim starter license was detected and will be used, even though you have installed ModelSim XE. You should obtain an XE license in order to access ModelSim XE's full capabilities.# Loading c:/Modeltech_xe/win32xoem/../std.standard
+# Loading c:/Modeltech_xe/win32xoem/../ieee.std_logic_1164(body)
+# Loading c:/Modeltech_xe/win32xoem/../ieee.std_logic_arith(body)
+# Loading c:/Modeltech_xe/win32xoem/../ieee.std_logic_unsigned(body)
+# Loading c:/Modeltech_xe/win32xoem/../std.textio(body)
+# Loading c:/Modeltech_xe/win32xoem/../ieee.vital_timing(body)
+# Loading c:/Modeltech_xe/win32xoem/../xilinx/vhdl/unisim.vcomponents
+# Loading c:/Modeltech_xe/win32xoem/../ieee.std_logic_textio(body)
+# Loading work.testbench(testbench_arch)
+# Loading work.queue(behavioral)
+# Loading c:/Modeltech_xe/win32xoem/../ieee.vital_primitives(body)
+# Loading c:/Modeltech_xe/win32xoem/../xilinx/vhdl/unisim.vpkg(body)
+# Loading c:/Modeltech_xe/win32xoem/../xilinx/vhdl/unisim.ibuf(ibuf_v)
+# Loading work.pulsecatch(behavioral)
+# Loading work.threebitupdowncounter(behavioral)
+# Loading work.twotoonebusmux(behavioral)
+# Loading work.busdflipflop(behavioral)
+# Loading work.eighttoonebusmux(behavioral)
+# .wave
+# .structure
+# .signals
+run -all
+# ** Failure: Simulation successful (not a failure).  No problems detected. 
+#    Time: 4800 ns  Iteration: 0  Instance: /testbench
+# Break at qtest.vhw line 358
+destroy .wave

@@ -1,0 +1,5 @@
+[stack]
+Design Entry Utilities=true
+User Constraints=true
+[stest.tbw]
+ModelSim Simulator=true

@@ -1,0 +1,4 @@
+-proj "c:\programlar\xilinx\bin\stack"
+-name "stest.tbw"
+-file "stack.vhd"
+-entity "stack"

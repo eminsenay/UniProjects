@@ -1,0 +1,8 @@
+Comment from 03.10.2011:
+
+I made some modifications to be able to build the code in VS2010.
+
+The first modification is changing iostream.h with iostream (so not a big issue).
+The second modification was because of a compile error. In the code, the loop variable "i" was used outside of the loop, which interestingly didn't cause any problems for the compiler 
+I was using back then. I only defined the variable outside of the loop not to alter the original code much, but probably this shouldn't have implemented like that at first, 
+so some bugs may exist in the code.

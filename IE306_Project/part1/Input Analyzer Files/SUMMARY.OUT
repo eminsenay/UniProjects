@@ -1,0 +1,17 @@
+Fit All
+
+Document:  C:\Documents and Settings\emin\My Documents\ders\IE 306\final proje\SHOP.TXT
+Data File: C:\Documents and Settings\emin\My Documents\ders\IE 306\final proje\SHOP.TXT
+
+
+Function       Sq Error
+-----------------------
+Weibull        0.00472
+Gamma          0.00517
+Beta           0.00562
+Erlang         0.0105
+Exponential    0.0105
+Lognormal      0.0119
+Normal         0.024
+Triangular     0.0441
+Uniform        0.0613

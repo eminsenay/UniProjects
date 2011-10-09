@@ -1,0 +1,143 @@
+-- C:\PROGRAMLAR\XILINX\BIN\QUEUE\TWOTOONEMUXTEST.ANT
+-- VHDL Annotation Test Bench created by
+-- HDL Bencher 4.1i
+-- Sun Jun 05 13:20:05 2005
+
+LIBRARY  IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+LIBRARY ieee;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY testbench IS
+END testbench;
+
+ARCHITECTURE testbench_arch OF testbench IS
+-- If you get a compiler error on the following line,
+-- from the menu do Options->Configuration select VHDL 87
+FILE RESULTS: TEXT OPEN WRITE_MODE IS "c:\programlar\xilinx\bin\queue\twotoonemuxtest.ano";
+	COMPONENT twotoonebusmux
+		PORT (
+			a : in  std_logic_vector (5 DOWNTO 0);
+			b : in  std_logic_vector (5 DOWNTO 0);
+			sel : in  std_logic;
+			o : out  std_logic_vector (5 DOWNTO 0)
+		);
+	END COMPONENT;
+
+	SIGNAL a : std_logic_vector (5 DOWNTO 0);
+	SIGNAL b : std_logic_vector (5 DOWNTO 0);
+	SIGNAL sel : std_logic;
+	SIGNAL o : std_logic_vector (5 DOWNTO 0);
+
+BEGIN
+	UUT : twotoonebusmux
+	PORT MAP (
+		a => a,
+		b => b,
+		sel => sel,
+		o => o
+	);
+
+	PROCESS -- Annotate outputs process
+		VARIABLE TX_TIME : INTEGER :=0;
+
+		PROCEDURE ANNOTATE_o(
+			TX_TIME : INTEGER
+		) IS
+			VARIABLE TX_STR : String(1 to 4096);
+			VARIABLE TX_LOC : LINE;
+		BEGIN
+			write(TX_LOC,string'("Annotate["));
+			write(TX_LOC, TX_TIME);
+			write(TX_LOC,string'(",o,"));
+			write(TX_LOC, o);
+			write(TX_LOC, string'("]"));
+			TX_STR(TX_LOC.all'range) := TX_LOC.all;
+			writeline(results, TX_LOC);
+			Deallocate(TX_LOC);
+		END;
+
+	BEGIN
+		CHECK_LOOP : LOOP
+		WAIT FOR 50 ns;
+		TX_TIME := TX_TIME + 50;
+		ANNOTATE_o(TX_TIME);
+		WAIT FOR 50 ns;
+		TX_TIME := TX_TIME + 50;
+		END LOOP CHECK_LOOP;
+	END PROCESS;
+
+	PROCESS
+		VARIABLE TX_OUT : LINE;
+
+		BEGIN
+		-- --------------------
+		a <= transport std_logic_vector'("000000"); --0
+		b <= transport std_logic_vector'("010000"); --10
+		sel <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=100 ns
+		a <= transport std_logic_vector'("000001"); --1
+		b <= transport std_logic_vector'("001111"); --F
+		sel <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=200 ns
+		a <= transport std_logic_vector'("000010"); --2
+		b <= transport std_logic_vector'("001110"); --E
+		sel <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=300 ns
+		a <= transport std_logic_vector'("000011"); --3
+		b <= transport std_logic_vector'("001101"); --D
+		sel <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=400 ns
+		a <= transport std_logic_vector'("000100"); --4
+		b <= transport std_logic_vector'("001100"); --C
+		sel <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=500 ns
+		a <= transport std_logic_vector'("000101"); --5
+		b <= transport std_logic_vector'("001011"); --B
+		sel <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=600 ns
+		a <= transport std_logic_vector'("000110"); --6
+		b <= transport std_logic_vector'("001010"); --A
+		sel <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=700 ns
+		a <= transport std_logic_vector'("000111"); --7
+		sel <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=800 ns
+		a <= transport std_logic_vector'("001000"); --8
+		b <= transport std_logic_vector'("001001"); --9
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=900 ns
+		a <= transport std_logic_vector'("001001"); --9
+		b <= transport std_logic_vector'("001000"); --8
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=1000 ns
+		a <= transport std_logic_vector'("001010"); --A
+		b <= transport std_logic_vector'("000111"); --7
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=1100 ns
+		-- --------------------
+
+		write(TX_OUT, string'("Total[]"));
+		writeline(results, TX_OUT);
+		ASSERT (FALSE) REPORT
+			"Success! Simulation for annotation completed"
+			SEVERITY FAILURE;
+	END PROCESS;
+END testbench_arch;
+
+CONFIGURATION twotoonebusmux_cfg OF testbench IS
+	FOR testbench_arch
+	END FOR;
+END twotoonebusmux_cfg;

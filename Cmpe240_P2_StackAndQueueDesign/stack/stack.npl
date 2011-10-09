@@ -1,0 +1,29 @@
+JDF E
+// Created by ISE ver 1.0
+PROJECT stack
+DESIGN stack Normal
+DEVKIT xc2s30-5tq144
+DEVFAM spartan2
+FLOW XST VHDL
+STIMULUS dflipfloptest.tbw Normal
+STIMULUS twotoonemuxtest.tbw Normal
+STIMULUS muxtest.tbw Normal
+STIMULUS pulsetest.tbw Normal
+STIMULUS newcountertest.tbw Normal
+STIMULUS stest.tbw Normal
+MODULE eighttoonebusmux.vhd
+MODSTYLE eighttoonebusmux Normal
+MODULE busdflipflop.vhd
+MODSTYLE busdflipflop Normal
+MODULE pulsecatch.vhd
+MODSTYLE pulsecatch Normal
+MODULE threebitupdowncounter.vhd
+MODSTYLE threebitupdowncounter Normal
+MODULE stack.vhd
+MODSTYLE stack Normal
+MODULE twotoonebusmux.vhd
+MODSTYLE twotoonebusmux Normal
+[STRATEGY-LIST]
+Normal=True, 1117971009
+[Normal]
+xilxBitgStart_Clk=xstvhd, SPARTAN2, VHDL.t_bitFile, 1118014677, JTAG Clock

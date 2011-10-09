@@ -1,0 +1,56 @@
+<html><!-- InstanceBegin template="/Templates/helpTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SAS - Yardım - Detay 
+      Görüntüleme (Doğrudan Alım)</title>
+<!-- InstanceEndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+<link href="help.css" rel="stylesheet">
+<link rel="StyleSheet" href="dtree.css" type="text/css" />
+<script type="text/javascript" src="dtree.js"></script>
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- InstanceBeginRepeat name="tekrarEdenler" --><!-- InstanceBeginRepeatEntry -->
+<table id="Table_01" width="798" height="547" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td> <img src="images/help_01.gif" width="240" height="131" alt=""></td>
+    <td background="images/help_02.gif" class="Baslik"><!-- InstanceBeginEditable name="baslik" -->Detay 
+      Görüntüleme (Doğrudan Alım)<!-- InstanceEndEditable --></td>
+  
+  <tr> 
+    <td background="images/help_03.gif" class="Menu">
+	
+<script language="JavaScript" type="text/JavaScript" src="js/solMenu.js"></script>
+	</td>
+    <td height="337" background="images/sablon2_04.gif" class="Main"><!-- InstanceBeginEditable name="EditRegion2" --> 
+      <p>Doğrudan alımın yapılacağı istekler için, teklifte bulanan firmanın adını 
+        “Firma Adı” kutucuğuna, firmanın adresini “Firma Adresi” kutucuğuna, firmanin 
+        teklif ettiği fiyatını ise “Teklif ettiği fiyat” kutucuğuna girip “Teklif 
+        Ekle” düğmesine basarak yeni teklif eklenir. Eklenen tekliflere ait bilgiler 
+        “Tarihçe Göster” düğmesinin hemen altındaki tabloda görüntülenebilir. 
+        Bu tablodaki “Teklif No” bilgilerini, isteğe ait “Uygun Teklif” kutucuğundan 
+        listeleyip, bunlardan birini (en uygun olanı) seçen kullanıcı bunu onaylar 
+        (“Onay” düğmesine tıklayarak) ya da reddeder (“Reddet” düğmesine tıklayarak).</p>
+      <p align="center"><img src="images/sisteme_giris_5.jpg" width="502" height="441"></p>
+      <p>Ayrıca “Tarihçe Göster” düğmesini tıklayıp İstek Fişi’ne ait geçmiş bilgileri 
+        görüntüleyebilir.</p>
+      <p align="center"><img src="images/sisteme_giris_6.jpg" width="507" height="579"></p>
+      <p>&nbsp; </p>
+      <!-- InstanceEndEditable --></td>
+  </tr>
+  <tr> 
+    <td> <img src="images/help_05.gif" alt="" width="240" height="79" border="0" usemap="#Map"></td>
+    <td> <img src="images/help_06.gif" alt="" width="558" height="79" border="0" usemap="#Map2"></td>
+  </tr>
+</table>
+<!-- End ImageReady Slices -->
+<!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat --> 
+<map name="Map">
+  <area shape="rect" coords="41,28,193,51" href="http://www.boun.edu.tr">
+</map>
+<map name="Map2">
+  <area shape="rect" coords="116,26,280,51" href="http://www.cmpe.boun.edu.tr">
+</map>
+</body>
+<!-- InstanceEnd --></html>

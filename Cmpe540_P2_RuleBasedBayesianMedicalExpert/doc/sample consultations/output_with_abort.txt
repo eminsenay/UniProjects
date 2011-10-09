@@ -1,0 +1,97 @@
+Are you sneezing a lot ? (yES/nO/aBORT) y
+Are your eyes painful or watering a lot ?  (yES/nO/aBORT) y
+Do you have a sore throat ?  (yES/nO/aBORT) n
+Is your voice hoarse ?  (yES/nO/aBORT) y
+Are you coughing a lot ?  (yES/nO/aBORT) y
+
+
+You are with 99.4472848819409% COMMON COLD
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 97.9991833401388% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+Do you have a runny nose  (yES/nO/aBORT) y
+
+
+You are with 99.9795875008852% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9944424385117% COMMON COLD
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 97.5847767748231% SINUSITIS
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.862688802896% ALLERGIC RHINITIS
+If you want to continue, continue aswering; o/w press a
+
+Do you have a headache or - in general - Do you suffer from headaches at all ?  (yES/nO/aBORT) n
+
+
+You are with 97.028207919321% SINUSITIS
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9931226084343% COMMON COLD
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9747407569056% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+Do you have a high temperature (over 100 f say) (yES/nO/aBORT) n
+
+
+You are with 99.949999075931% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9863836824185% COMMON COLD
+If you want to continue, continue aswering; o/w press a
+
+Do you spend a lot of your time in a very dusty atmosphere  (yES/nO/aBORT) y
+does your skin itch  (yES/nO/aBORT) y
+
+
+You are with 99.9980357528691% ALLERGIC RHINITIS
+If you want to continue, continue aswering; o/w press a
+
+ Do you have a dry throat  (yES/nO/aBORT) n
+
+
+You are with 99.9935182772974% ALLERGIC RHINITIS
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.8351864896122% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+Is your breath wheezy' ?  (yES/nO/aBORT) n
+
+
+You are with 99.9839592698916% ALLERGIC RHINITIS
+If you want to continue, continue aswering; o/w press a
+
+Is your nose very 'blocked up' ?  (yES/nO/aBORT) a
+
+
+You are with 97.028207919321% SINUSITIS
+
+You are with 99.9863836824185% COMMON COLD
+
+You are with 99.8351864896122% MEASLES
+
+You are with 99.9839592698916% ALLERGIC RHINITIS

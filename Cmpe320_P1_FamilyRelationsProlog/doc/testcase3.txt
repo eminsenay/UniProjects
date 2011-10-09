@@ -1,0 +1,87 @@
+parent(çisilsu,doða). 
+parent(gizem,çisilsu). 
+parent(bengi,nesli). 
+parent(abdurrahman,derin). 
+parent(sertan,nesli). 
+parent(gizem,sertan).
+parent(gizem,kadriye).
+parent(kadriye,kerem).
+parent(abuzer,bengi).
+parent(abuzer,tergül).
+parent(ismail,abdurrahman).
+parent(ismail,alican).
+parent(belgin,abdurrahman).
+parent(belgin,alican).
+parent(alican,rýza).
+parent(ismail,gülþah).
+parent(gülþah,salih).
+parent(belgin,gülþah).
+parent(abdurrahman,bahadýr).
+
+female(çisilsu).
+female(gizem).
+female(bengi).
+female(nesli).
+female(derin).
+female(kadriye).
+female(tergül).
+female(belgin).
+female(gülþah).
+
+male(alican).
+male(doða).
+male(abdurrahman).
+male(sertan).
+male(kerem).
+male(abuzer).
+male(ismail).
+male(rýza).
+male(salih).
+male(bahadýr).
+
+1 ?- allPeople(Ln,N).
+
+Ln = [alican, doða, abdurrahman, sertan, kerem, abuzer, ismail, rýza, salih|...]
+N = 19 [write]
+
+Ln = [alican, doða, abdurrahman, sertan, kerem, abuzer, ismail, rýza, salih, bahadýr, çisilsu, gizem, bengi, nesli, derin, kadriye, tergül, belgin, gülþah]
+N = 19 
+
+Yes
+2 ?- removeNonrelatives(çisilsu,[alican,abdurrahman,sertan,kerem,tergül,emin,nesli,derin],List).
+Correct to: removeNonRelatives(çisilsu, [alican, abdurrahman, sertan, kerem, tergül, emin, nesli, derin], List)? yes
+
+List = [sertan, kerem, nesli] 
+
+Yes
+3 ?- nephew(nesli,X).
+
+No
+4 ?- nephew(çisilsu,X).
+
+No
+5 ?- niece(çisilsu,X).
+
+No
+6 ?- niece(nesli,X).
+
+X = çisilsu ;
+
+X = kadriye ;
+
+X = tergül ;
+
+No
+7 ?- nephew(alican,X).
+
+No
+8 ?- nephew(rýza,X).
+
+X = abdurrahman 
+
+Yes
+9 ?- mother(X,doða).
+
+X = çisilsu 
+
+Yes

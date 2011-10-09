@@ -1,0 +1,49 @@
+<HTML>
+	<HEAD>
+			<SCRIPT language="JavaScript">
+				var hasSelectedPrivKey = 0;
+				
+				function readPrivateKey() {
+				
+				        document.sign_applet.readPrivateFile('dummy')
+				        
+				}
+				function imzala() {
+					
+						if (hasSelectedPrivKey == 0) {
+							alert("oncelikle private key dosyasini bulun");
+						} else {
+							document.sign_applet.signDocument(document.forms[0].document_content.value)
+						}
+						
+				}
+
+				function hasBeenRead () {
+					hasSelectedPrivKey = 1;
+				}
+
+				function approve (signature) {
+					document.forms[0].document_content.value = signature;
+					document.forms[0].submit();
+				}
+</SCRIPT>
+	</HEAD>
+<BODY>
+<form>
+        <input type="hidden" name="document_content" value="deeede  dadad">
+        <input type="hidden" name="signature" value="">
+    	  <APPLET NAME="sign_applet" CODE=HtmlAccessApplet.class archive="SSignedApplet.jar" WIDTH=0 HEIGHT=0 MAYSCRIPT></APPLET>
+
+
+</p>
+        
+     	 Onaylamak için lütfen özel þifre anahtarýnýzý sisteme yükleyiniz.<input type="button" value="private keyi bul" onClick="readPrivateKey()" language="JavaScript">
+        
+</p>
+
+       <input type="button" value="dokumani imzala" name="sign_button" onClick="imzala()">
+       
+</form>
+
+</BODY>
+</HTML>

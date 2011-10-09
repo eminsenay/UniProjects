@@ -1,0 +1,65 @@
+# LINES STARTING WITH '#' ARE COMMENTS
+# COMPUTER ENGINEERING UNDERGRADUATE CURRICULUM
+
+% SEMESTER 1
+# COURSE_CODE COURSE_NAME NUMBER_OF_CREDITS
+MATH 101	Calculus I	4
+PHYS 121	Intro. Mechanics & Thermodynamics	4
+CHEM 105	General Chemistry	4
+CMPE 150	Introduction to Computing	3
+EC 101	Introduction to Economics I	3
+
+% SEMESTER 2
+MATH 102	Calculus II	4
+PHYS 201	Physics III	4
+ENGG 110	Engineering Graphics	3
+CMPE 160	Intermediate Programming	4
+EC 102	Introduction to Economics II	3
+
+% SEMESTER 3
+MATH 201	Calculus III	4
+PHYS 202	Physics IV	4
+EE 210	Electrical Engineering	3
+CMPE 220	Discrete Computational Structures	3
+CMPE 230	Systems Programming	4
+TK 221	Turkish	2
+
+% SEMESTER 4
+MATH 202	Differential Equations	4
+EE 212	Principles of Electronics Engineering	3
+CMPE 240	Digital Systems	4
+CMPE 250	Data Structures and Algorithms	4
+HSS	Humanities or Social Sciences Elective	3
+TK 222	Turkish	2
+
+% SEMESTER 5
+MATH 343	Probability	4
+CMPE 300	Analysis of Algorithms	3
+CMPE 322	Operating Systems	4
+CMPE 344	Computer Organization	4
+IE 310	Operations Research	4
+HTR 311	History of Turkish Republic I	2
+
+% SEMESTER 6
+CMPE 360	Numerical Methods	3
+CC	Complementary Elective	3/4
+CMPE 321	Introduction to Database Systems	4
+CMPE 350	Formal Languages and Automata Theory	3
+IE 306	System Simulation	4
+HTR 312	History of Turkish Republic II	2
+
+% SEMESTER 7
+CMPE 450	Software Engineering	4
+CC	Complementary Elective	3/4
+CC	Complementary Elective	3/4
+CC	Complementary Elective	3/4
+CC	Complementary Elective	3/4
+
+% SEMESTER 8
+CMPE 492	Project	4
+HSS	Humanities or Social Sciences Elective	3
+CC	Complementary Elective	3/4
+CC	Complementary Elective	3/4
+CC	Complementary Elective	3/4
+
+#başında yüzde olmayanlar ve cc ya da hss olmayanları al hashe at key kodu value adı

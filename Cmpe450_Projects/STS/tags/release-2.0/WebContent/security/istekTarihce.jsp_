@@ -1,0 +1,75 @@
+<!-- This JSP is not standalone. It is a part of other JSPs. -->
+<!-- So this pages' extension is changed as jsp_ -->
+
+<%@page import="java.util.Hashtable"%>
+
+
+        <br><div align="center">
+		<table bgcolor="#FFFFFF" width="438" border="1" bordercolor="#CCCCFF" cellspacing="0" cellpadding="0" class="tablefont">
+			<tr> 
+               		 <td width="437">&#304;STEK F&#304;&#350;&#304; GEÇM&#304;&#350; B&#304;LG&#304;LER&#304;:<a name="Gecmis"></a></td>
+            </tr>
+			
+			<tr><td><p>&nbsp;</p>			
+				<table bgcolor="#FFFFFF" width="438" border="3" bordercolor="#CCCCFF" cellspacing="0" cellpadding="0" class="tablefont">
+              		<tr>	
+						<td width="174">&#304;&#351;lem yapan</td>
+						<td width="174">&#304;&#351;lem zamani</td>
+						<td width="174">Bilgi</td>
+						<td width="174">&#304;mza</td>
+					</tr>
+					<%
+					ResultSet result3 = null;
+					Hashtable userVerified = new Hashtable();
+					try {
+					ResultSet resultSecurity = db.executeSP("IstekFisiImzaGoster_sp", new Object [] {requestFormID}).getResult();
+					
+					String security_gecmisNo;
+					while(resultSecurity.next()) {
+						security_gecmisNo = resultSecurity.getString("GecmisNo");
+						if (security_gecmisNo != null && security_gecmisNo.length() > 0)
+						userVerified.put(security_gecmisNo, (global.Security.verifySignature(resultSecurity.getString("KullaniciNo"), requestFormID, resultSecurity.getString("Imza"), resultSecurity.getString("ImzaTarihi"), resultSecurity.getString("ImzaFormati")))?"Dogrulandi":"Dogrulanamadi");
+					}
+					
+					result3=db.executeQuery("SELECT K.KullaniciNo, K.KUllaniciAdi, G.OlusturmaTarihi, G.Aciklama, G.GecmisNo FROM GECMIS G, ISTEK_FISI I, KULLANICI K WHERE I.IstekFisiNo='"+requestFormID+"' and G.IstekFisiNo=I.IstekFisiNo and K.KullaniciNo=G.KullaniciNo");
+					} catch(Exception e) {
+						e.printStackTrace();
+					}
+					
+					while(result3.next()){
+					%>
+					<tr> 
+						<td width="174"><% 
+						String t1=result3.getString("KullaniciAdi");
+						out.print(t1);
+						%></td>
+						<td width="174"><% 
+						String t2=result3.getString("OlusturmaTarihi");
+						if(t2 == null || t2.length() == 0)
+    						t2 = "Yok";
+    					else {
+				    		String parca[] = t2.split(" ");//yy-aa-gg tt:tt:tt geliyor
+				    		String parca2[] = parca[0].split("-");//get yy aa gg
+				    		t2 = parca2[2]+"/"+parca2[1]+"/"+parca2[0];
+    					}
+						out.print(t2);
+						%></td>
+						<td width="174"><%
+						String t3=result3.getString("Aciklama");
+						out.print(t3);
+						%></td>
+						<td width="174"><%
+						String t4=(String)userVerified.get(result3.getString("GecmisNo"));
+						if (t4 != null)
+							out.print(t4);
+						else
+							out.print("Yok");
+						%></td>
+					</tr>
+					<%
+					}
+					%>
+				</table>
+			</td></tr>
+		</table>
+		</div>

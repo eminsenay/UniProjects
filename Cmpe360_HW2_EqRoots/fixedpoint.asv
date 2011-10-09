@@ -1,0 +1,20 @@
+function [k,l,m] = fixedpoint(Xzero,tolerance)
+Xone = -Xzero^2 + Xzero + 3;
+Xtwo = (-Xzero^2 / 3) + Xzero + 1;
+Xthree = (Xzero^2 + 3 ) / (2*Xzero);
+temp = Xzero;
+while abs(Xone - Xzero) > tolerance
+Xzero = Xone;
+Xone = -Xzero^2 + Xzero + 3; end
+XZero = temp;
+Xtwp
+while abs(Xtwo - Xzero) > tolerance
+Xzero = Xtwo;
+Xtwo = (-Xzero^2 / 3) + Xzero + 1; end
+XZero = temp;
+while abs(Xthree - Xzero) > tolerance
+Xzero = Xthree;
+Xthree = (Xzero^2 + 3 ) / (2*Xzero); end
+k = Xone;
+l = Xtwo;
+m = Xthree;

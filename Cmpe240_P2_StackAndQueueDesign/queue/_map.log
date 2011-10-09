@@ -1,0 +1,4 @@
+Mapping Module queue . . .
+MAP command line:
+"map -p xc2s30-tq144-5 -cm area -k 4 -c 100 -tx off queue.ngd "
+Mapping Module queue: DONE

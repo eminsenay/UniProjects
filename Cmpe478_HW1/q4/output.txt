@@ -1,0 +1,220 @@
+Serial time for vector size 1000: 
+Initialization: 72 microseconds
+Processing:3 microseconds
+Dotproduct: 256.603
+
+Parallel time for vector size 1000: 
+Initialization: 81 microseconds
+Processing:2 microseconds
+Dotproduct: 246.188
+
+Serial time for vector size 10000: 
+Initialization: 1483 microseconds
+Processing:22 microseconds
+Dotproduct: 2474.63
+
+Parallel time for vector size 10000: 
+Initialization: 804 microseconds
+Processing:14 microseconds
+Dotproduct: 2501.05
+
+Serial time for vector size 50000: 
+Initialization: 3986 microseconds
+Processing:203 microseconds
+Dotproduct: 12473.8
+
+Parallel time for vector size 50000: 
+Initialization: 4093 microseconds
+Processing:161 microseconds
+Dotproduct: 12576.6
+
+Serial time for vector size 25000: 
+Initialization: 1835 microseconds
+Processing:57 microseconds
+Dotproduct: 6223.08
+
+Parallel time for vector size 25000: 
+Initialization: 2015 microseconds
+Processing:29 microseconds
+Dotproduct: 6243.76
+
+Serial time for vector size 75000: 
+Initialization: 5523 microseconds
+Processing:174 microseconds
+Dotproduct: 18706.6
+
+Parallel time for vector size 75000: 
+Initialization: 6216 microseconds
+Processing:134 microseconds
+Dotproduct: 18785.2
+
+Serial time for vector size 100000: 
+Initialization: 7926 microseconds
+Processing:260 microseconds
+Dotproduct: 24946.6
+
+Parallel time for vector size 100000: 
+Initialization: 8034 microseconds
+Processing:163 microseconds
+Dotproduct: 25035.3
+
+Serial time for vector size 250000: 
+Initialization: 21539 microseconds
+Processing:962 microseconds
+Dotproduct: 62400.4
+
+Parallel time for vector size 250000: 
+Initialization: 21411 microseconds
+Processing:580 microseconds
+Dotproduct: 63007.3
+
+Serial time for vector size 500000: 
+Initialization: 43149 microseconds
+Processing:1291 microseconds
+Dotproduct: 125265
+
+Parallel time for vector size 500000: 
+Initialization: 41169 microseconds
+Processing:1070 microseconds
+Dotproduct: 124879
+
+Serial time for vector size 750000: 
+Initialization: 61722 microseconds
+Processing:1957 microseconds
+Dotproduct: 187443
+
+Parallel time for vector size 750000: 
+Initialization: 61896 microseconds
+Processing:1637 microseconds
+Dotproduct: 187135
+
+Serial time for vector size 1000000: 
+Initialization: 78869 microseconds
+Processing:2808 microseconds
+Dotproduct: 249990
+
+Parallel time for vector size 1000000: 
+Initialization: 82436 microseconds
+Processing:2156 microseconds
+Dotproduct: 249644
+
+Serial time for vector size 2500000: 
+Initialization: 197484 microseconds
+Processing:6667 microseconds
+Dotproduct: 625061
+
+Parallel time for vector size 2500000: 
+Initialization: 202797 microseconds
+Processing:5663 microseconds
+Dotproduct: 626069
+
+Serial time for vector size 5000000: 
+Initialization: 385854 microseconds
+Processing:13699 microseconds
+Dotproduct: 1.25e+06
+
+Parallel time for vector size 5000000: 
+Initialization: 400622 microseconds
+Processing:11611 microseconds
+Dotproduct: 1.24702e+06
+
+Serial time for vector size 7500000: 
+Initialization: 568611 microseconds
+Processing:19912 microseconds
+Dotproduct: 1.87432e+06
+
+Parallel time for vector size 7500000: 
+Initialization: 600311 microseconds
+Processing:16569 microseconds
+Dotproduct: 1.87257e+06
+
+Serial time for vector size 10000000: 
+Initialization: 757684 microseconds
+Processing:28760 microseconds
+Dotproduct: 2.4995e+06
+
+Parallel time for vector size 10000000: 
+Initialization: 798696 microseconds
+Processing:22831 microseconds
+Dotproduct: 2.5023e+06
+
+Serial time for vector size 25000000: 
+Initialization: 1881299 microseconds
+Processing:65465 microseconds
+Dotproduct: 6.24991e+06
+
+Parallel time for vector size 25000000: 
+Initialization: 1998955 microseconds
+Processing:53366 microseconds
+Dotproduct: 6.25339e+06
+
+Serial time for vector size 50000000: 
+Initialization: 3809169 microseconds
+Processing:131731 microseconds
+Dotproduct: 1.24974e+07
+
+Parallel time for vector size 50000000: 
+Initialization: 4012975 microseconds
+Processing:105395 microseconds
+Dotproduct: 1.25014e+07
+
+Serial time for vector size 75000000: 
+Initialization: 5776098 microseconds
+Processing:205657 microseconds
+Dotproduct: 1.87516e+07
+
+Parallel time for vector size 75000000: 
+Initialization: 6250565 microseconds
+Processing:186062 microseconds
+Dotproduct: 1.87477e+07
+
+Serial time for vector size 100000000: 
+Initialization: 7539300 microseconds
+Processing:266616 microseconds
+Dotproduct: 2.50054e+07
+
+Parallel time for vector size 100000000: 
+Initialization: 8254986 microseconds
+Processing:231886 microseconds
+Dotproduct: 2.49995e+07
+
+Serial time for vector size 250000000: 
+Initialization: 19477876 microseconds
+Processing:714402 microseconds
+Dotproduct: 6.24991e+07
+
+Parallel time for vector size 250000000: 
+Initialization: 20990977 microseconds
+Processing:615279 microseconds
+Dotproduct: 6.25101e+07
+
+Serial time for vector size 500000000: 
+Initialization: 36430760 microseconds
+Processing:1278129 microseconds
+Dotproduct: 1.25007e+08
+
+Parallel time for vector size 500000000: 
+Initialization: 38923619 microseconds
+Processing:1046899 microseconds
+Dotproduct: 1.25001e+08
+
+Serial time for vector size 750000000: 
+Initialization: 54362636 microseconds
+Processing:1873456 microseconds
+Dotproduct: 1.87506e+08
+
+Parallel time for vector size 750000000: 
+Initialization: 58631970 microseconds
+Processing:1542157 microseconds
+Dotproduct: 1.8748e+08
+
+Serial time for vector size 1000000000: 
+Initialization: 73734314 microseconds
+Processing:2490344 microseconds
+Dotproduct: 2.49996e+08
+
+Parallel time for vector size 1000000000: 
+Initialization: 78930935 microseconds
+Processing:2041258 microseconds
+Dotproduct: 2.49989e+08
+

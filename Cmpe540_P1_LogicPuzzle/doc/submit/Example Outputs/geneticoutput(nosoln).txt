@@ -1,0 +1,5 @@
+
+D:\ders\540\New Folder>javac com\eminsenay\cmpe540\p1\Constraint.java com\eminsenay\cmpe540\p1\CSPModel.java com\eminsenay\cmpe540\p1\GeneticAlgorithmSolver.java com\eminsenay\cmpe540\p1\ProblemGeneticAlgorithm.java  
+
+D:\ders\540\New Folder>java com.eminsenay.cmpe540.p1.ProblemGeneticAlgorithm 
+Solution cannot be found. Please try again.

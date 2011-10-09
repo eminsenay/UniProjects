@@ -1,0 +1,1 @@
+Correction for HW6 Q1b: What convergence test should you use? Test your program on the matrices in Q3. 

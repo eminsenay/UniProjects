@@ -1,0 +1,332 @@
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : queue.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : queue
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : queue
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/pulsecatch.vhd in Library work.
+Entity <pulsecatch> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd in Library work.
+Entity <threebitupdowncounter> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/twotoonebusmux.vhd in Library work.
+Entity <twotoonebusmux> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/busdflipflop.vhd in Library work.
+Entity <busdflipflop> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/eighttoonebusmux.vhd in Library work.
+Entity <eighttoonebusmux> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/queue.vhd in Library work.
+Entity <queue> (Architecture <behavioral>) compiled.
+
+Analyzing Entity <queue> (Architecture <behavioral>).
+Entity <queue> analyzed. Unit <queue> generated.
+
+Analyzing Entity <pulsecatch> (Architecture <behavioral>).
+Entity <pulsecatch> analyzed. Unit <pulsecatch> generated.
+
+Analyzing Entity <threebitupdowncounter> (Architecture <behavioral>).
+Entity <threebitupdowncounter> analyzed. Unit <threebitupdowncounter> generated.
+
+Analyzing Entity <twotoonebusmux> (Architecture <behavioral>).
+Entity <twotoonebusmux> analyzed. Unit <twotoonebusmux> generated.
+
+Analyzing Entity <busdflipflop> (Architecture <behavioral>).
+Entity <busdflipflop> analyzed. Unit <busdflipflop> generated.
+
+Analyzing Entity <eighttoonebusmux> (Architecture <behavioral>).
+Entity <eighttoonebusmux> analyzed. Unit <eighttoonebusmux> generated.
+
+
+Synthesizing Unit <eighttoonebusmux>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/eighttoonebusmux.vhd.
+WARNING:Xst:647 - Input <e<5>> is never used.
+WARNING:Xst:647 - Input <e<4>> is never used.
+WARNING:Xst:647 - Input <e<3>> is never used.
+WARNING:Xst:647 - Input <e<2>> is never used.
+WARNING:Xst:647 - Input <e<1>> is never used.
+WARNING:Xst:647 - Input <e<0>> is never used.
+WARNING:Xst:647 - Input <f<5>> is never used.
+WARNING:Xst:647 - Input <f<4>> is never used.
+WARNING:Xst:647 - Input <f<3>> is never used.
+WARNING:Xst:647 - Input <f<2>> is never used.
+WARNING:Xst:647 - Input <f<1>> is never used.
+WARNING:Xst:647 - Input <f<0>> is never used.
+WARNING:Xst:647 - Input <g<5>> is never used.
+WARNING:Xst:647 - Input <g<4>> is never used.
+WARNING:Xst:647 - Input <g<3>> is never used.
+WARNING:Xst:647 - Input <g<2>> is never used.
+WARNING:Xst:647 - Input <g<1>> is never used.
+WARNING:Xst:647 - Input <g<0>> is never used.
+WARNING:Xst:647 - Input <h<5>> is never used.
+WARNING:Xst:647 - Input <h<4>> is never used.
+WARNING:Xst:647 - Input <h<3>> is never used.
+WARNING:Xst:647 - Input <h<2>> is never used.
+WARNING:Xst:647 - Input <h<1>> is never used.
+WARNING:Xst:647 - Input <h<0>> is never used.
+Unit <eighttoonebusmux> synthesized.
+
+
+Synthesizing Unit <busdflipflop>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/busdflipflop.vhd.
+    Found 6-bit register for signal <q>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <busdflipflop> synthesized.
+
+
+Synthesizing Unit <twotoonebusmux>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/twotoonebusmux.vhd.
+    Found 6 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <twotoonebusmux> synthesized.
+
+
+Synthesizing Unit <threebitupdowncounter>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd.
+    Found 1-bit register for signal <err>.
+    Found 3-bit updown counter for signal <tmp>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <threebitupdowncounter> synthesized.
+
+
+Synthesizing Unit <pulsecatch>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/pulsecatch.vhd.
+Unit <pulsecatch> synthesized.
+
+
+Synthesizing Unit <queue>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/queue.vhd.
+Unit <queue> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 5
+  6-bit register                   : 4
+  1-bit register                   : 1
+# Counters                         : 1
+  3-bit updown counter             : 1
+# Multiplexers                     : 4
+  2-to-1 multiplexer               : 4
+
+=========================================================================
+
+
+Starting low level synthesis...
+Optimizing unit <threebitupdowncounter> ...
+
+Optimizing unit <eighttoonebusmux> ...
+
+Optimizing unit <pulsecatch> ...
+
+Optimizing unit <queue> ...
+
+Building and optimizing final netlist ...
+
+=========================================================================
+Final Results
+Top Level Output File Name         : queue
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Target Technology                  : spartan2
+Keep Hierarchy                     : No
+Macro Generator                    : macro+
+
+Macro Statistics
+# Registers                        : 6
+  6-bit register                   : 4
+  1-bit register                   : 1
+  3-bit register                   : 1
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 92
+#      GND                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 27
+#      LUT3                        : 12
+#      LUT3_D                      : 1
+#      LUT4                        : 47
+#      MUXF5                       : 3
+# FlipFlops/Latches                : 28
+#      FDC                         : 25
+#      FDCE                        : 3
+# IO Buffers                       : 19
+#      IBUF                        : 11
+#      OBUF                        : 8
+=========================================================================
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+u11_I_y2_OO_OO_:O                  | NONE(*)(u18_q_5)       | 29    |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.364ns (Maximum Frequency: 106.792MHz)
+   Minimum input arrival time before clock: 9.746ns
+   Maximum output required time after clock: 13.705ns
+   Maximum combinational path delay: 14.087ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'u11_I_y2_OO_OO_:O'
+Delay:               9.364ns (Levels of Logic = 2)
+  Source:            u12_tmp_1
+  Destination:       u12_tmp_2
+  Source Clock:      u11_I_y2_OO_OO_:O rising
+  Destination Clock: u11_I_y2_OO_OO_:O rising
+
+  Data Path: u12_tmp_1 to u12_tmp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDCE:C->Q             21   1.292   3.250  u12_tmp_1 (u12_tmp_1)
+    LUT3:I0->O             1   0.653   1.150  u12_I_1_LUT_25 (u12_N47)
+    LUT4:I2->O             3   0.653   1.480  u12_I__n0018 (u12_N50)
+    FDCE:CE                    0.886          u12_tmp_2
+    ----------------------------------------
+    Total                      9.364ns (3.484ns logic, 5.880ns route)
+                                       (37.2% logic, 62.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u11_I_y2_OO_OO_:O'
+Offset:              9.746ns (Levels of Logic = 3)
+  Source:            push
+  Destination:       u12_tmp_2
+  Destination Clock: u11_I_y2_OO_OO_:O rising
+
+  Data Path: push to u12_tmp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O             36   0.924   4.000  u9 (pushbuf)
+    LUT3:I1->O             1   0.653   1.150  u12_I_XXL_22 (u12_N38)
+    LUT4:I0->O             3   0.653   1.480  u12_I__n0018 (u12_N50)
+    FDCE:CE                    0.886          u12_tmp_2
+    ----------------------------------------
+    Total                      9.746ns (3.116ns logic, 6.630ns route)
+                                       (32.0% logic, 68.0% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u11_I_y2_OO_OO_:O'
+Offset:              13.705ns (Levels of Logic = 3)
+  Source:            u12_tmp_1
+  Destination:       output_0
+  Source Clock:      u11_I_y2_OO_OO_:O rising
+
+  Data Path: u12_tmp_1 to output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDCE:C->Q             21   1.292   3.250  u12_tmp_1 (u12_tmp_1)
+    LUT4:I1->O             1   0.653   1.150  u21_I_1_LUT_34 (u21_N72)
+    LUT3:I1->O             1   0.653   1.150  u21_I_o_0 (output_0_OBUF)
+    OBUF:I->O                  5.557          output_0_OBUF (output_0)
+    ----------------------------------------
+    Total                     13.705ns (8.155ns logic, 5.550ns route)
+                                       (59.5% logic, 40.5% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               14.087ns (Levels of Logic = 4)
+  Source:            push
+  Destination:       output_0
+
+  Data Path: push to output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O             36   0.924   4.000  u9 (pushbuf)
+    LUT4:I0->O             1   0.653   1.150  u21_I_0_LUT_7 (u21_N62)
+    LUT3:I0->O             1   0.653   1.150  u21_I_o_0 (output_0_OBUF)
+    OBUF:I->O                  5.557          output_0_OBUF (output_0)
+    ----------------------------------------
+    Total                     14.087ns (7.787ns logic, 6.300ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+CPU : 2.23 / 2.27 s | Elapsed : 2.00 / 2.00 s
+ 
+--> 

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+icpc -i-static -L /opt/exp_soft/intel/lib -I./ main.cpp eqFileOp.cpp sac.cpp bashScript.cpp stringop.cpp eqDb.cpp window.cpp pickFilter.cpp ALIOUT.o  ANSWER.o  aPicker.o  ARVDRV.o  AZWTOS.o  FMPLOT.o  HYP71.o  HYPO71.o  INPUT1.o  INPUT2.o  MISING.o  SINGLE.o  SORT.o  SUMOUT.o  SWMREG.o  xfMags0.o  XFMAGS.o libifcore.a

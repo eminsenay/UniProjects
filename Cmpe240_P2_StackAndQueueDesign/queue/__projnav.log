@@ -1,0 +1,4054 @@
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @busdflipflop.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    busdflipflop.vhd
+Scanning    busdflipflop.vhd
+Writing busdflipflop.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Synthesize
+
+Starting: 'exewrap @__busdflipflop_2prj_exewrap.rsp'
+
+
+Creating TCL Process
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -tcl -command C:/Programlar/Xilinx/data/projnav/_filesAllClean.tcl _XSTClean.rsp 0'
+
+
+Creating TCL Process
+Cleaning Up Project
+Finished cleaning up project
+Done: completed successfully.
+
+Starting: 'exewrap -mode pipe -tapkeep -command C:/Programlar/Xilinx/bin/nt/xst.exe -ifn busdflipflop.xst -ofn busdflipflop.syr'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/xst.exe -ifn busdflipflop.xst -ofn busdflipflop.syr '
+
+
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : busdflipflop.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : busdflipflop
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : busdflipflop
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/busdflipflop.vhd in Library work.
+Entity <busdflipflop> (Architecture <behavioral>) compiled.
+
+Analyzing Entity <busdflipflop> (Architecture <behavioral>).
+Entity <busdflipflop> analyzed. Unit <busdflipflop> generated.
+
+
+Synthesizing Unit <busdflipflop>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/busdflipflop.vhd.
+    Found 6-bit register for signal <q>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <busdflipflop> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 1
+  6-bit register                   : 1
+
+=========================================================================
+
+
+Starting low level synthesis...
+Optimizing unit <busdflipflop> ...
+
+Building and optimizing final netlist ...
+
+=========================================================================
+Final Results
+Top Level Output File Name         : busdflipflop
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Target Technology                  : spartan2
+Keep Hierarchy                     : No
+Macro Generator                    : macro+
+
+Macro Statistics
+# Registers                        : 1
+  6-bit register                   : 1
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# FlipFlops/Latches                : 6
+#      FDC                         : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 7
+#      OBUF                        : 6
+=========================================================================
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 6     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 3.557ns
+   Maximum output required time after clock: 7.999ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+Offset:              3.557ns (Levels of Logic = 1)
+  Source:            res
+  Destination:       q_3
+  Destination Clock: clk rising
+
+  Data Path: res to q_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O              6   0.924   1.850  res_IBUF (res_IBUF)
+    FDC:CLR                    0.783          q_3
+    ----------------------------------------
+    Total                      3.557ns (1.707ns logic, 1.850ns route)
+                                       (48.0% logic, 52.0% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+Offset:              7.999ns (Levels of Logic = 1)
+  Source:            q_0
+  Destination:       q_0
+  Source Clock:      clk rising
+
+  Data Path: q_0 to q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDC:C->Q               1   1.292   1.150  q_0 (q_0_OBUF)
+    OBUF:I->O                  5.557          q_0_OBUF (q_0)
+    ----------------------------------------
+    Total                      7.999ns (6.849ns logic, 1.150ns route)
+                                       (85.6% logic, 14.4% route)
+
+=========================================================================
+CPU : 0.47 / 0.51 s | Elapsed : 1.00 / 1.00 s
+ 
+--> 
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/xst.exe' completed successfully.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'exewrap @__tbwTOjhd_exewrap.rsp'
+
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\dflipfloptest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\dflipfloptest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @eighttoonebusmux.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    eighttoonebusmux.vhd
+Scanning    eighttoonebusmux.vhd
+Writing eighttoonebusmux.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Synthesize
+
+Starting: 'exewrap @__eighttoonebusmux_2prj_exewrap.rsp'
+
+
+Creating TCL Process
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -tcl -command C:/Programlar/Xilinx/data/projnav/_filesAllClean.tcl _XSTClean.rsp 0'
+
+
+Creating TCL Process
+Cleaning Up Project
+deleting directory: ./xst
+Finished cleaning up project
+Done: completed successfully.
+
+Starting: 'exewrap -mode pipe -tapkeep -command C:/Programlar/Xilinx/bin/nt/xst.exe -ifn eighttoonebusmux.xst -ofn eighttoonebusmux.syr'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/xst.exe -ifn eighttoonebusmux.xst -ofn eighttoonebusmux.syr '
+
+
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : eighttoonebusmux.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : eighttoonebusmux
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : eighttoonebusmux
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/eighttoonebusmux.vhd in Library work.
+Entity <eighttoonebusmux> (Architecture <behavioral>) compiled.
+
+Analyzing Entity <eighttoonebusmux> (Architecture <behavioral>).
+Entity <eighttoonebusmux> analyzed. Unit <eighttoonebusmux> generated.
+
+
+Synthesizing Unit <eighttoonebusmux>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/eighttoonebusmux.vhd.
+Unit <eighttoonebusmux> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+
+Starting low level synthesis...
+Optimizing unit <eighttoonebusmux> ...
+
+Building and optimizing final netlist ...
+
+=========================================================================
+Final Results
+Top Level Output File Name         : eighttoonebusmux
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Target Technology                  : spartan2
+Keep Hierarchy                     : No
+Macro Generator                    : macro+
+
+Design Statistics
+# IOs                              : 58
+
+Cell Usage :
+# BELS                             : 42
+#      LUT3                        : 6
+#      LUT4                        : 24
+#      MUXF5                       : 12
+# IO Buffers                       : 58
+#      IBUF                        : 52
+#      OBUF                        : 6
+=========================================================================
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 13.862ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               13.862ns (Levels of Logic = 5)
+  Source:            s1
+  Destination:       o_0
+
+  Data Path: s1 to o_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O             24   0.924   3.400  s1_IBUF (s1_IBUF)
+    LUT4:I0->O             1   0.653   0.000  I_0_LUT_18_F (N370)
+    MUXF5:I0->O            1   0.375   1.150  I_0_LUT_18 (N80)
+    LUT3:I1->O             1   0.653   1.150  I_o_0 (o_0_OBUF)
+    OBUF:I->O                  5.557          o_0_OBUF (o_0)
+    ----------------------------------------
+    Total                     13.862ns (8.162ns logic, 5.700ns route)
+                                       (58.9% logic, 41.1% route)
+
+=========================================================================
+CPU : 0.69 / 0.72 s | Elapsed : 1.00 / 1.00 s
+ 
+--> 
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/xst.exe' completed successfully.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'exewrap @__tbwTOjhd_exewrap.rsp'
+
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\muxtest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @twotoonebusmux.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    twotoonebusmux.vhd
+Scanning    twotoonebusmux.vhd
+Writing twotoonebusmux.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Synthesize
+
+Starting: 'exewrap @__twotoonebusmux_2prj_exewrap.rsp'
+
+
+Creating TCL Process
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -tcl -command C:/Programlar/Xilinx/data/projnav/_filesAllClean.tcl _XSTClean.rsp 0'
+
+
+Creating TCL Process
+Cleaning Up Project
+deleting directory: ./xst
+Finished cleaning up project
+Done: completed successfully.
+
+Starting: 'exewrap -mode pipe -tapkeep -command C:/Programlar/Xilinx/bin/nt/xst.exe -ifn twotoonebusmux.xst -ofn twotoonebusmux.syr'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/xst.exe -ifn twotoonebusmux.xst -ofn twotoonebusmux.syr '
+
+
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : twotoonebusmux.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : twotoonebusmux
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : twotoonebusmux
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/twotoonebusmux.vhd in Library work.
+Entity <twotoonebusmux> (Architecture <behavioral>) compiled.
+
+Analyzing Entity <twotoonebusmux> (Architecture <behavioral>).
+Entity <twotoonebusmux> analyzed. Unit <twotoonebusmux> generated.
+
+
+Synthesizing Unit <twotoonebusmux>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/twotoonebusmux.vhd.
+    Found 6 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <twotoonebusmux> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                     : 1
+  2-to-1 multiplexer               : 1
+
+=========================================================================
+
+
+Starting low level synthesis...
+Optimizing unit <twotoonebusmux> ...
+
+Building and optimizing final netlist ...
+
+=========================================================================
+Final Results
+Top Level Output File Name         : twotoonebusmux
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Target Technology                  : spartan2
+Keep Hierarchy                     : No
+Macro Generator                    : macro+
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 6
+#      LUT3                        : 6
+# IO Buffers                       : 19
+#      IBUF                        : 13
+#      OBUF                        : 6
+=========================================================================
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.134ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               10.134ns (Levels of Logic = 3)
+  Source:            sel
+  Destination:       o_0
+
+  Data Path: sel to o_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O              6   0.924   1.850  sel_IBUF (sel_IBUF)
+    LUT3:I1->O             1   0.653   1.150  I_o_0 (o_0_OBUF)
+    OBUF:I->O                  5.557          o_0_OBUF (o_0)
+    ----------------------------------------
+    Total                     10.134ns (7.134ns logic, 3.000ns route)
+                                       (70.4% logic, 29.6% route)
+
+=========================================================================
+CPU : 0.47 / 0.51 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/xst.exe' completed successfully.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Launching: 'exewrap -tcl -command __runBencher.tcl'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\twotoonemuxtest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @threebitupdowncounter.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    threebitupdowncounter.vhd
+Scanning    threebitupdowncounter.vhd
+Writing threebitupdowncounter.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Synthesize
+
+Starting: 'exewrap @__threebitupdowncounter_2prj_exewrap.rsp'
+
+
+Creating TCL Process
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -tcl -command C:/Programlar/Xilinx/data/projnav/_filesAllClean.tcl _XSTClean.rsp 0'
+
+
+Creating TCL Process
+Cleaning Up Project
+deleting directory: ./xst
+Finished cleaning up project
+Done: completed successfully.
+
+Starting: 'exewrap @8501.rsp'
+Original: 'exewrap -mode pipe -tapkeep -command C:/Programlar/Xilinx/bin/nt/xst.exe -ifn threebitupdowncounter.xst -ofn threebitupdowncounter.syr'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/xst.exe -ifn threebitupdowncounter.xst -ofn threebitupdowncounter.syr '
+
+
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : threebitupdowncounter.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : threebitupdowncounter
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : threebitupdowncounter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd in Library work.
+Entity <threebitupdowncounter> (Architecture <behavioral>) compiled.
+
+Analyzing Entity <threebitupdowncounter> (Architecture <behavioral>).
+Entity <threebitupdowncounter> analyzed. Unit <threebitupdowncounter> generated.
+
+
+Synthesizing Unit <threebitupdowncounter>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd.
+    Found 1-bit register for signal <err>.
+    Found 3-bit updown counter for signal <tmp>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <threebitupdowncounter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 1
+  1-bit register                   : 1
+# Counters                         : 1
+  3-bit updown counter             : 1
+
+=========================================================================
+
+
+Starting low level synthesis...
+Optimizing unit <threebitupdowncounter> ...
+
+Building and optimizing final netlist ...
+
+=========================================================================
+Final Results
+Top Level Output File Name         : threebitupdowncounter
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Target Technology                  : spartan2
+Keep Hierarchy                     : No
+Macro Generator                    : macro+
+
+Macro Statistics
+# Registers                        : 2
+  3-bit register                   : 1
+  1-bit register                   : 1
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 17
+#      GND                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 3
+#      LUT3                        : 4
+#      LUT3_D                      : 1
+#      LUT4                        : 4
+#      MUXF5                       : 3
+# FlipFlops/Latches                : 4
+#      FDC                         : 1
+#      FDCE                        : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 3
+#      OBUF                        : 6
+=========================================================================
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 4     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.234ns (Maximum Frequency: 121.448MHz)
+   Minimum input arrival time before clock: 7.596ns
+   Maximum output required time after clock: 10.772ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'clk'
+Delay:               8.234ns (Levels of Logic = 2)
+  Source:            tmp_2
+  Destination:       tmp_0
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: tmp_2 to tmp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDCE:C->Q              9   1.292   2.120  tmp_2 (tmp_2)
+    LUT3:I0->O             1   0.653   1.150  I_XXL_22 (N38)
+    LUT4:I0->O             3   0.653   1.480  I__n0018 (N50)
+    FDCE:CE                    0.886          tmp_0
+    ----------------------------------------
+    Total                      8.234ns (3.484ns logic, 4.750ns route)
+                                       (42.3% logic, 57.7% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+Offset:              7.596ns (Levels of Logic = 3)
+  Source:            up
+  Destination:       tmp_0
+  Destination Clock: clk rising
+
+  Data Path: up to tmp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O              6   0.924   1.850  up_IBUF (up_IBUF)
+    LUT3:I1->O             1   0.653   1.150  I_XXL_22 (N38)
+    LUT4:I0->O             3   0.653   1.480  I__n0018 (N50)
+    FDCE:CE                    0.886          tmp_0
+    ----------------------------------------
+    Total                      7.596ns (3.116ns logic, 4.480ns route)
+                                       (41.0% logic, 59.0% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+Offset:              10.772ns (Levels of Logic = 2)
+  Source:            tmp_2
+  Destination:       empty
+  Source Clock:      clk rising
+
+  Data Path: tmp_2 to empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDCE:C->Q              9   1.292   2.120  tmp_2 (tmp_2)
+    LUT3:I0->O             1   0.653   1.150  I_empty (empty_OBUF)
+    OBUF:I->O                  5.557          empty_OBUF (empty)
+    ----------------------------------------
+    Total                     10.772ns (7.502ns logic, 3.270ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+CPU : 1.22 / 1.26 s | Elapsed : 1.00 / 1.00 s
+ 
+--> 
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/xst.exe' completed successfully.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'exewrap @__tbwTOjhd_exewrap.rsp'
+
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\newcountertest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @queue.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    queue.vhd
+Scanning    queue.vhd
+Scanning    C:/Programlar/Xilinx/vhdl/src/unisims/unisim_VCOMP.vhd
+Writing queue.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @queue.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    queue.vhd
+Scanning    queue.vhd
+Scanning    C:/Programlar/Xilinx/vhdl/src/unisims/unisim_VCOMP.vhd
+Writing queue.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Synthesize
+
+Starting: 'exewrap @__queue_2prj_exewrap.rsp'
+
+
+Creating TCL Process
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -tcl -command C:/Programlar/Xilinx/data/projnav/_filesAllClean.tcl _XSTClean.rsp 0'
+
+
+Creating TCL Process
+Cleaning Up Project
+deleting directory: ./xst
+Finished cleaning up project
+Done: completed successfully.
+
+Starting: 'exewrap -mode pipe -tapkeep -command C:/Programlar/Xilinx/bin/nt/xst.exe -ifn queue.xst -ofn queue.syr'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/xst.exe -ifn queue.xst -ofn queue.syr '
+
+
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : queue.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : queue
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : queue
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd in Library work.
+Entity <threebitupdowncounter> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/twotoonebusmux.vhd in Library work.
+Entity <twotoonebusmux> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/busdflipflop.vhd in Library work.
+Entity <busdflipflop> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/eighttoonebusmux.vhd in Library work.
+Entity <eighttoonebusmux> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/queue.vhd in Library work.
+Entity <queue> (Architecture <behavioral>) compiled.
+
+Analyzing Entity <queue> (Architecture <behavioral>).
+Entity <queue> analyzed. Unit <queue> generated.
+
+Analyzing Entity <threebitupdowncounter> (Architecture <behavioral>).
+Entity <threebitupdowncounter> analyzed. Unit <threebitupdowncounter> generated.
+
+Analyzing Entity <twotoonebusmux> (Architecture <behavioral>).
+Entity <twotoonebusmux> analyzed. Unit <twotoonebusmux> generated.
+
+Analyzing Entity <busdflipflop> (Architecture <behavioral>).
+Entity <busdflipflop> analyzed. Unit <busdflipflop> generated.
+
+Analyzing Entity <eighttoonebusmux> (Architecture <behavioral>).
+Entity <eighttoonebusmux> analyzed. Unit <eighttoonebusmux> generated.
+
+
+Synthesizing Unit <eighttoonebusmux>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/eighttoonebusmux.vhd.
+WARNING:Xst:647 - Input <e<5>> is never used.
+WARNING:Xst:647 - Input <e<4>> is never used.
+WARNING:Xst:647 - Input <e<3>> is never used.
+WARNING:Xst:647 - Input <e<2>> is never used.
+WARNING:Xst:647 - Input <e<1>> is never used.
+WARNING:Xst:647 - Input <e<0>> is never used.
+WARNING:Xst:647 - Input <f<5>> is never used.
+WARNING:Xst:647 - Input <f<4>> is never used.
+WARNING:Xst:647 - Input <f<3>> is never used.
+WARNING:Xst:647 - Input <f<2>> is never used.
+WARNING:Xst:647 - Input <f<1>> is never used.
+WARNING:Xst:647 - Input <f<0>> is never used.
+WARNING:Xst:647 - Input <g<5>> is never used.
+WARNING:Xst:647 - Input <g<4>> is never used.
+WARNING:Xst:647 - Input <g<3>> is never used.
+WARNING:Xst:647 - Input <g<2>> is never used.
+WARNING:Xst:647 - Input <g<1>> is never used.
+WARNING:Xst:647 - Input <g<0>> is never used.
+WARNING:Xst:647 - Input <h<5>> is never used.
+WARNING:Xst:647 - Input <h<4>> is never used.
+WARNING:Xst:647 - Input <h<3>> is never used.
+WARNING:Xst:647 - Input <h<2>> is never used.
+WARNING:Xst:647 - Input <h<1>> is never used.
+WARNING:Xst:647 - Input <h<0>> is never used.
+Unit <eighttoonebusmux> synthesized.
+
+
+Synthesizing Unit <busdflipflop>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/busdflipflop.vhd.
+    Found 6-bit register for signal <q>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <busdflipflop> synthesized.
+
+
+Synthesizing Unit <twotoonebusmux>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/twotoonebusmux.vhd.
+    Found 6 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <twotoonebusmux> synthesized.
+
+
+Synthesizing Unit <threebitupdowncounter>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd.
+    Found 1-bit register for signal <err>.
+    Found 3-bit updown counter for signal <tmp>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <threebitupdowncounter> synthesized.
+
+
+Synthesizing Unit <queue>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/queue.vhd.
+Unit <queue> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 5
+  6-bit register                   : 4
+  1-bit register                   : 1
+# Counters                         : 1
+  3-bit updown counter             : 1
+# Multiplexers                     : 4
+  2-to-1 multiplexer               : 4
+
+=========================================================================
+
+
+Starting low level synthesis...
+Optimizing unit <threebitupdowncounter> ...
+
+Optimizing unit <eighttoonebusmux> ...
+
+Optimizing unit <queue> ...
+
+Building and optimizing final netlist ...
+
+=========================================================================
+Final Results
+Top Level Output File Name         : queue
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Target Technology                  : spartan2
+Keep Hierarchy                     : No
+Macro Generator                    : macro+
+
+Macro Statistics
+# Registers                        : 6
+  6-bit register                   : 4
+  1-bit register                   : 1
+  3-bit register                   : 1
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 90
+#      GND                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 27
+#      LUT3                        : 11
+#      LUT3_D                      : 1
+#      LUT4                        : 46
+#      MUXF5                       : 3
+# FlipFlops/Latches                : 28
+#      FDC                         : 25
+#      FDCE                        : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 9
+#      OBUF                        : 8
+=========================================================================
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 28    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.364ns (Maximum Frequency: 106.792MHz)
+   Minimum input arrival time before clock: 9.746ns
+   Maximum output required time after clock: 13.705ns
+   Maximum combinational path delay: 14.087ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'clock'
+Delay:               9.364ns (Levels of Logic = 2)
+  Source:            u0_tmp_1
+  Destination:       u0_tmp_2
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: u0_tmp_1 to u0_tmp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDCE:C->Q             21   1.292   3.250  u0_tmp_1 (u0_tmp_1)
+    LUT3:I0->O             1   0.653   1.150  u0_I_1_LUT_25 (u0_N47)
+    LUT4:I2->O             3   0.653   1.480  u0_I__n0018 (u0_N50)
+    FDCE:CE                    0.886          u0_tmp_2
+    ----------------------------------------
+    Total                      9.364ns (3.484ns logic, 5.880ns route)
+                                       (37.2% logic, 62.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+Offset:              9.746ns (Levels of Logic = 3)
+  Source:            push
+  Destination:       u0_tmp_2
+  Destination Clock: clock rising
+
+  Data Path: push to u0_tmp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O             36   0.924   4.000  push_IBUF (push_IBUF)
+    LUT3:I1->O             1   0.653   1.150  u0_I_XXL_22 (u0_N38)
+    LUT4:I0->O             3   0.653   1.480  u0_I__n0018 (u0_N50)
+    FDCE:CE                    0.886          u0_tmp_2
+    ----------------------------------------
+    Total                      9.746ns (3.116ns logic, 6.630ns route)
+                                       (32.0% logic, 68.0% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+Offset:              13.705ns (Levels of Logic = 3)
+  Source:            u0_tmp_1
+  Destination:       output_0
+  Source Clock:      clock rising
+
+  Data Path: u0_tmp_1 to output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDCE:C->Q             21   1.292   3.250  u0_tmp_1 (u0_tmp_1)
+    LUT4:I1->O             1   0.653   1.150  u16_I_1_LUT_34 (u16_N72)
+    LUT3:I1->O             1   0.653   1.150  u16_I_o_0 (output_0_OBUF)
+    OBUF:I->O                  5.557          output_0_OBUF (output_0)
+    ----------------------------------------
+    Total                     13.705ns (8.155ns logic, 5.550ns route)
+                                       (59.5% logic, 40.5% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               14.087ns (Levels of Logic = 4)
+  Source:            push
+  Destination:       output_0
+
+  Data Path: push to output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O             36   0.924   4.000  push_IBUF (push_IBUF)
+    LUT4:I0->O             1   0.653   1.150  u16_I_0_LUT_7 (u16_N62)
+    LUT3:I0->O             1   0.653   1.150  u16_I_o_0 (output_0_OBUF)
+    OBUF:I->O                  5.557          output_0_OBUF (output_0)
+    ----------------------------------------
+    Total                     14.087ns (7.787ns logic, 6.300ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+CPU : 2.22 / 2.25 s | Elapsed : 3.00 / 3.00 s
+ 
+--> 
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/xst.exe' completed successfully.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'exewrap @__tbwTOjhd_exewrap.rsp'
+
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\queuetest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @pulsecatch.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    pulsecatch.vhd
+Scanning    pulsecatch.vhd
+Writing pulsecatch.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @pulsecatch.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    pulsecatch.vhd
+Scanning    pulsecatch.vhd
+Writing pulsecatch.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Synthesize
+
+Starting: 'exewrap @__pulsecatch_2prj_exewrap.rsp'
+
+
+Creating TCL Process
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -tcl -command C:/Programlar/Xilinx/data/projnav/_filesAllClean.tcl _XSTClean.rsp 0'
+
+
+Creating TCL Process
+Cleaning Up Project
+deleting directory: ./xst
+Finished cleaning up project
+Done: completed successfully.
+
+Starting: 'exewrap -mode pipe -tapkeep -command C:/Programlar/Xilinx/bin/nt/xst.exe -ifn pulsecatch.xst -ofn pulsecatch.syr'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/xst.exe -ifn pulsecatch.xst -ofn pulsecatch.syr '
+
+
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : pulsecatch.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : pulsecatch
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : pulsecatch
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/pulsecatch.vhd in Library work.
+Entity <pulsecatch> (Architecture <behavioral>) compiled.
+
+Analyzing Entity <pulsecatch> (Architecture <behavioral>).
+Entity <pulsecatch> analyzed. Unit <pulsecatch> generated.
+
+
+Synthesizing Unit <pulsecatch>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/pulsecatch.vhd.
+Unit <pulsecatch> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+
+Starting low level synthesis...
+Optimizing unit <pulsecatch> ...
+
+Building and optimizing final netlist ...
+
+=========================================================================
+Final Results
+Top Level Output File Name         : pulsecatch
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Target Technology                  : spartan2
+Keep Hierarchy                     : No
+Macro Generator                    : macro+
+
+Design Statistics
+# IOs                              : 3
+
+Cell Usage :
+# BELS                             : 2
+#      LUT3                        : 1
+#      LUT4                        : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      OBUF                        : 1
+=========================================================================
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 11.807ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               11.807ns (Levels of Logic = 4)
+  Source:            p
+  Destination:       z
+
+  Data Path: p to z
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O              2   0.924   1.340  p_IBUF (p_IBUF)
+    LUT3:I0->O             2   0.653   1.340  I_b_OO_OO_ (name_to_delete10)
+    LUT4:I2->O             2   0.653   1.340  I_y2_OO_OO_ (z_OBUF)
+    OBUF:I->O                  5.557          z_OBUF (z)
+    ----------------------------------------
+    Total                     11.807ns (7.787ns logic, 4.020ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+CPU : 0.47 / 0.51 s | Elapsed : 1.00 / 1.00 s
+ 
+--> 
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/xst.exe' completed successfully.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Launching: 'exewrap -tcl -command __runBencher.tcl'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Generate Expected Simulation Results
+
+Starting: 'exewrap -tapkeep -mode pipe -sen 50 -tcl -command C:/Programlar/Xilinx/data/projnav/__simulateAnnoTestBench.tcl __antTOano.rsp'
+
+
+Creating TCL Process
+Running Automatic Do File: pulsetest.ado
+Starting: 'c:/Modeltech_xe/win32xoem/vsim -c -do pulsetest.ado'
+
+
+Warning: A ModelSim starter license was detected and will be used, even though you have installed ModelSim XE. You should ob
+tain an XE license in order to access ModelSim XE's full capabilities.Reading c:/Modeltech_xe/win32xoem/../tcl/vsim/pref.tcl 
+
+# 5.5e_p1
+
+# Warning: A ModelSim starter license was detected and will be used, even though you have installed ModelSim XE. You should 
+obtain an XE license in order to access ModelSim XE's full capabilities.do pulsetest.ado 
+# resume
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity pulsecatch
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Compiling architecture behavioral of pulsecatch
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading entity pulsecatch
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity testbench
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Compiling architecture testbench_arch of testbench
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading entity testbench
+# -- Loading entity pulsecatch
+# -- Compiling configuration pulsecatch_cfg
+# -- Loading entity testbench
+# -- Loading architecture testbench_arch of testbench
+# vsim -lib work -t 1ps -L xilinxcorelib testbench 
+# Loading c:/Modeltech_xe/win32xoem/../std.standard
+# Loading c:/Modeltech_xe/win32xoem/../ieee.std_logic_1164(body)
+# Loading c:/Modeltech_xe/win32xoem/../ieee.std_logic_arith(body)
+# Loading c:/Modeltech_xe/win32xoem/../ieee.std_logic_unsigned(body)
+# Loading c:/Modeltech_xe/win32xoem/../std.textio(body)
+# Loading c:/Modeltech_xe/win32xoem/../ieee.std_logic_textio(body)
+# Loading work.testbench(testbench_arch)
+# Loading work.pulsecatch(behavioral)
+# Iteration limit reached. Possible zero delay oscillation. See the manual.
+# 
+# Executing ONERROR command at macro ./pulsetest.ado line 13
+Tcl C:/Programlar/Xilinx/data/projnav/__simulateAnnoTestBench.tcl detected that program 'c:/Modeltech_xe/win32xoem/vsim -c -do pulsetest.ado' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap -tcl -command __runBencherAnno.tcl'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\pulsetest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\pulsetest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\pulsetest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\pulsetest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\pulsetest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\pulsetest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @pulsecatch.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    pulsecatch.vhd
+Scanning    pulsecatch.vhd
+Writing pulsecatch.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\pulsetest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\pulsetest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @queue.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    queue.vhd
+Scanning    queue.vhd
+Scanning    C:/Programlar/Xilinx/vhdl/src/unisims/unisim_VCOMP.vhd
+Writing queue.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @queue.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    queue.vhd
+Scanning    queue.vhd
+Scanning    C:/Programlar/Xilinx/vhdl/src/unisims/unisim_VCOMP.vhd
+Writing queue.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'exewrap @__tbwTOjhd_exewrap.rsp'
+
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Synthesize
+
+Starting: 'exewrap @__queue_2prj_exewrap.rsp'
+
+
+Creating TCL Process
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -tcl -command C:/Programlar/Xilinx/data/projnav/_filesAllClean.tcl _XSTClean.rsp 0'
+
+
+Creating TCL Process
+Cleaning Up Project
+deleting directory: ./xst
+Finished cleaning up project
+Done: completed successfully.
+
+Starting: 'exewrap -mode pipe -tapkeep -command C:/Programlar/Xilinx/bin/nt/xst.exe -ifn queue.xst -ofn queue.syr'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/xst.exe -ifn queue.xst -ofn queue.syr '
+
+
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : queue.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : queue
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : queue
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/pulsecatch.vhd in Library work.
+Entity <pulsecatch> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd in Library work.
+Entity <threebitupdowncounter> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/twotoonebusmux.vhd in Library work.
+Entity <twotoonebusmux> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/busdflipflop.vhd in Library work.
+Entity <busdflipflop> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/eighttoonebusmux.vhd in Library work.
+Entity <eighttoonebusmux> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/queue.vhd in Library work.
+Entity <queue> (Architecture <behavioral>) compiled.
+
+Analyzing Entity <queue> (Architecture <behavioral>).
+Entity <queue> analyzed. Unit <queue> generated.
+
+Analyzing Entity <pulsecatch> (Architecture <behavioral>).
+Entity <pulsecatch> analyzed. Unit <pulsecatch> generated.
+
+Analyzing Entity <threebitupdowncounter> (Architecture <behavioral>).
+Entity <threebitupdowncounter> analyzed. Unit <threebitupdowncounter> generated.
+
+Analyzing Entity <twotoonebusmux> (Architecture <behavioral>).
+Entity <twotoonebusmux> analyzed. Unit <twotoonebusmux> generated.
+
+Analyzing Entity <busdflipflop> (Architecture <behavioral>).
+Entity <busdflipflop> analyzed. Unit <busdflipflop> generated.
+
+Analyzing Entity <eighttoonebusmux> (Architecture <behavioral>).
+Entity <eighttoonebusmux> analyzed. Unit <eighttoonebusmux> generated.
+
+
+Synthesizing Unit <eighttoonebusmux>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/eighttoonebusmux.vhd.
+WARNING:Xst:647 - Input <e<5>> is never used.
+WARNING:Xst:647 - Input <e<4>> is never used.
+WARNING:Xst:647 - Input <e<3>> is never used.
+WARNING:Xst:647 - Input <e<2>> is never used.
+WARNING:Xst:647 - Input <e<1>> is never used.
+WARNING:Xst:647 - Input <e<0>> is never used.
+WARNING:Xst:647 - Input <f<5>> is never used.
+WARNING:Xst:647 - Input <f<4>> is never used.
+WARNING:Xst:647 - Input <f<3>> is never used.
+WARNING:Xst:647 - Input <f<2>> is never used.
+WARNING:Xst:647 - Input <f<1>> is never used.
+WARNING:Xst:647 - Input <f<0>> is never used.
+WARNING:Xst:647 - Input <g<5>> is never used.
+WARNING:Xst:647 - Input <g<4>> is never used.
+WARNING:Xst:647 - Input <g<3>> is never used.
+WARNING:Xst:647 - Input <g<2>> is never used.
+WARNING:Xst:647 - Input <g<1>> is never used.
+WARNING:Xst:647 - Input <g<0>> is never used.
+WARNING:Xst:647 - Input <h<5>> is never used.
+WARNING:Xst:647 - Input <h<4>> is never used.
+WARNING:Xst:647 - Input <h<3>> is never used.
+WARNING:Xst:647 - Input <h<2>> is never used.
+WARNING:Xst:647 - Input <h<1>> is never used.
+WARNING:Xst:647 - Input <h<0>> is never used.
+Unit <eighttoonebusmux> synthesized.
+
+
+Synthesizing Unit <busdflipflop>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/busdflipflop.vhd.
+    Found 6-bit register for signal <q>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <busdflipflop> synthesized.
+
+
+Synthesizing Unit <twotoonebusmux>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/twotoonebusmux.vhd.
+    Found 6 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <twotoonebusmux> synthesized.
+
+
+Synthesizing Unit <threebitupdowncounter>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd.
+    Found 1-bit register for signal <err>.
+    Found 3-bit updown counter for signal <tmp>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <threebitupdowncounter> synthesized.
+
+
+Synthesizing Unit <pulsecatch>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/pulsecatch.vhd.
+Unit <pulsecatch> synthesized.
+
+
+Synthesizing Unit <queue>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/queue.vhd.
+Unit <queue> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 5
+  6-bit register                   : 4
+  1-bit register                   : 1
+# Counters                         : 1
+  3-bit updown counter             : 1
+# Multiplexers                     : 4
+  2-to-1 multiplexer               : 4
+
+=========================================================================
+
+
+Starting low level synthesis...
+Optimizing unit <threebitupdowncounter> ...
+
+Optimizing unit <eighttoonebusmux> ...
+
+Optimizing unit <pulsecatch> ...
+
+Optimizing unit <queue> ...
+
+Building and optimizing final netlist ...
+
+=========================================================================
+Final Results
+Top Level Output File Name         : queue
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Target Technology                  : spartan2
+Keep Hierarchy                     : No
+Macro Generator                    : macro+
+
+Macro Statistics
+# Registers                        : 6
+  6-bit register                   : 4
+  1-bit register                   : 1
+  3-bit register                   : 1
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 92
+#      GND                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 27
+#      LUT3                        : 12
+#      LUT3_D                      : 1
+#      LUT4                        : 47
+#      MUXF5                       : 3
+# FlipFlops/Latches                : 28
+#      FDC                         : 25
+#      FDCE                        : 3
+# IO Buffers                       : 19
+#      IBUF                        : 11
+#      OBUF                        : 8
+=========================================================================
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+u0_I_y2_OO_OO_:O                   | NONE(*)(u7_q_5)        | 29    |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.364ns (Maximum Frequency: 106.792MHz)
+   Minimum input arrival time before clock: 9.746ns
+   Maximum output required time after clock: 13.705ns
+   Maximum combinational path delay: 14.087ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'u0_I_y2_OO_OO_:O'
+Delay:               9.364ns (Levels of Logic = 2)
+  Source:            u1_tmp_1
+  Destination:       u1_tmp_2
+  Source Clock:      u0_I_y2_OO_OO_:O rising
+  Destination Clock: u0_I_y2_OO_OO_:O rising
+
+  Data Path: u1_tmp_1 to u1_tmp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDCE:C->Q             21   1.292   3.250  u1_tmp_1 (u1_tmp_1)
+    LUT3:I0->O             1   0.653   1.150  u1_I_1_LUT_25 (u1_N47)
+    LUT4:I2->O             3   0.653   1.480  u1_I__n0018 (u1_N50)
+    FDCE:CE                    0.886          u1_tmp_2
+    ----------------------------------------
+    Total                      9.364ns (3.484ns logic, 5.880ns route)
+                                       (37.2% logic, 62.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u0_I_y2_OO_OO_:O'
+Offset:              9.746ns (Levels of Logic = 3)
+  Source:            push
+  Destination:       u1_tmp_2
+  Destination Clock: u0_I_y2_OO_OO_:O rising
+
+  Data Path: push to u1_tmp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O             36   0.924   4.000  push_IBUF (push_IBUF)
+    LUT3:I1->O             1   0.653   1.150  u1_I_XXL_22 (u1_N38)
+    LUT4:I0->O             3   0.653   1.480  u1_I__n0018 (u1_N50)
+    FDCE:CE                    0.886          u1_tmp_2
+    ----------------------------------------
+    Total                      9.746ns (3.116ns logic, 6.630ns route)
+                                       (32.0% logic, 68.0% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u0_I_y2_OO_OO_:O'
+Offset:              13.705ns (Levels of Logic = 3)
+  Source:            u1_tmp_1
+  Destination:       output_0
+  Source Clock:      u0_I_y2_OO_OO_:O rising
+
+  Data Path: u1_tmp_1 to output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDCE:C->Q             21   1.292   3.250  u1_tmp_1 (u1_tmp_1)
+    LUT4:I1->O             1   0.653   1.150  u10_I_1_LUT_34 (u10_N72)
+    LUT3:I1->O             1   0.653   1.150  u10_I_o_0 (output_0_OBUF)
+    OBUF:I->O                  5.557          output_0_OBUF (output_0)
+    ----------------------------------------
+    Total                     13.705ns (8.155ns logic, 5.550ns route)
+                                       (59.5% logic, 40.5% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               14.087ns (Levels of Logic = 4)
+  Source:            push
+  Destination:       output_0
+
+  Data Path: push to output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O             36   0.924   4.000  push_IBUF (push_IBUF)
+    LUT4:I0->O             1   0.653   1.150  u10_I_0_LUT_7 (u10_N62)
+    LUT3:I0->O             1   0.653   1.150  u10_I_o_0 (output_0_OBUF)
+    OBUF:I->O                  5.557          output_0_OBUF (output_0)
+    ----------------------------------------
+    Total                     14.087ns (7.787ns logic, 6.300ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+CPU : 2.16 / 2.19 s | Elapsed : 2.00 / 2.00 s
+ 
+--> 
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/xst.exe' completed successfully.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Launching: 'exewrap -tcl -command __runBencher.tcl'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\qtest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\qtest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @queue.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    queue.vhd
+Scanning    queue.vhd
+Scanning    C:/Programlar/Xilinx/vhdl/src/unisims/unisim_VCOMP.vhd
+Writing queue.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\qtest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\qtest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\qtest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\qtest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\qtest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\qtest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @queue.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    queue.vhd
+Scanning    queue.vhd
+Scanning    C:/Programlar/Xilinx/vhdl/src/unisims/unisim_VCOMP.vhd
+Writing queue.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @queue.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    queue.vhd
+Scanning    queue.vhd
+Scanning    C:/Programlar/Xilinx/vhdl/src/unisims/unisim_VCOMP.vhd
+Writing queue.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @queue.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    queue.vhd
+Scanning    queue.vhd
+Scanning    C:/Programlar/Xilinx/vhdl/src/unisims/unisim_VCOMP.vhd
+Writing queue.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @queue.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    queue.vhd
+Scanning    queue.vhd
+Scanning    C:/Programlar/Xilinx/vhdl/src/unisims/unisim_VCOMP.vhd
+Writing queue.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Synthesize
+
+Starting: 'exewrap @__queue_2prj_exewrap.rsp'
+
+
+Creating TCL Process
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -tcl -command C:/Programlar/Xilinx/data/projnav/_filesAllClean.tcl _XSTClean.rsp 0'
+
+
+Creating TCL Process
+Cleaning Up Project
+deleting directory: ./xst
+Finished cleaning up project
+Done: completed successfully.
+
+Starting: 'exewrap -mode pipe -tapkeep -command C:/Programlar/Xilinx/bin/nt/xst.exe -ifn queue.xst -ofn queue.syr'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/xst.exe -ifn queue.xst -ofn queue.syr '
+
+
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : queue.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : queue
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : queue
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/pulsecatch.vhd in Library work.
+Entity <pulsecatch> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd in Library work.
+Entity <threebitupdowncounter> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/twotoonebusmux.vhd in Library work.
+Entity <twotoonebusmux> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/busdflipflop.vhd in Library work.
+Entity <busdflipflop> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/eighttoonebusmux.vhd in Library work.
+Entity <eighttoonebusmux> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/queue.vhd in Library work.
+ERROR:HDLParsers:3313 - C:/Programlar/Xilinx/bin/queue/queue.vhd Line 70. Undefined symbol 'pulsebuf'.  Should it be: 'pulse
+ buf'?
+ERROR:HDLParsers:1209 - C:/Programlar/Xilinx/bin/queue/queue.vhd Line 76. pulsebuf: Undefined symbol (last report in this bl
+ock)
+CPU : 0.33 / 0.36 s | Elapsed : 1.00 / 1.00 s
+ 
+--> 
+EXEWRAP detected a return code of '1' from program 'C:/Programlar/Xilinx/bin/nt/xst.exe'
+
+Done: failed with exit code: 0001.
+
+ISE Auto-Make Log File
+-----------------------
+
+Starting: 'jhdparse @queue.jp'
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 4.1i Copyright(c) 1999-2001 Xilinx, Inc.  All rights reserved. 
+
+Scanning    queue.vhd
+Scanning    queue.vhd
+Scanning    C:/Programlar/Xilinx/vhdl/src/unisims/unisim_VCOMP.vhd
+Writing queue.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Synthesize
+
+Starting: 'exewrap @__queue_2prj_exewrap.rsp'
+
+
+Creating TCL Process
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -tcl -command C:/Programlar/Xilinx/data/projnav/_filesAllClean.tcl _XSTClean.rsp 0'
+
+
+Creating TCL Process
+Cleaning Up Project
+deleting directory: ./xst
+Finished cleaning up project
+Done: completed successfully.
+
+Starting: 'exewrap -mode pipe -tapkeep -command C:/Programlar/Xilinx/bin/nt/xst.exe -ifn queue.xst -ofn queue.syr'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/xst.exe -ifn queue.xst -ofn queue.syr '
+
+
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : queue.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : queue
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : queue
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/pulsecatch.vhd in Library work.
+Entity <pulsecatch> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd in Library work.
+Entity <threebitupdowncounter> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/twotoonebusmux.vhd in Library work.
+Entity <twotoonebusmux> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/busdflipflop.vhd in Library work.
+Entity <busdflipflop> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/eighttoonebusmux.vhd in Library work.
+Entity <eighttoonebusmux> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/queue.vhd in Library work.
+Entity <queue> (Architecture <behavioral>) compiled.
+
+Analyzing Entity <queue> (Architecture <behavioral>).
+Entity <queue> analyzed. Unit <queue> generated.
+
+Analyzing Entity <pulsecatch> (Architecture <behavioral>).
+Entity <pulsecatch> analyzed. Unit <pulsecatch> generated.
+
+Analyzing Entity <threebitupdowncounter> (Architecture <behavioral>).
+Entity <threebitupdowncounter> analyzed. Unit <threebitupdowncounter> generated.
+
+Analyzing Entity <twotoonebusmux> (Architecture <behavioral>).
+Entity <twotoonebusmux> analyzed. Unit <twotoonebusmux> generated.
+
+Analyzing Entity <busdflipflop> (Architecture <behavioral>).
+Entity <busdflipflop> analyzed. Unit <busdflipflop> generated.
+
+Analyzing Entity <eighttoonebusmux> (Architecture <behavioral>).
+Entity <eighttoonebusmux> analyzed. Unit <eighttoonebusmux> generated.
+
+
+Synthesizing Unit <eighttoonebusmux>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/eighttoonebusmux.vhd.
+WARNING:Xst:647 - Input <e<5>> is never used.
+WARNING:Xst:647 - Input <e<4>> is never used.
+WARNING:Xst:647 - Input <e<3>> is never used.
+WARNING:Xst:647 - Input <e<2>> is never used.
+WARNING:Xst:647 - Input <e<1>> is never used.
+WARNING:Xst:647 - Input <e<0>> is never used.
+WARNING:Xst:647 - Input <f<5>> is never used.
+WARNING:Xst:647 - Input <f<4>> is never used.
+WARNING:Xst:647 - Input <f<3>> is never used.
+WARNING:Xst:647 - Input <f<2>> is never used.
+WARNING:Xst:647 - Input <f<1>> is never used.
+WARNING:Xst:647 - Input <f<0>> is never used.
+WARNING:Xst:647 - Input <g<5>> is never used.
+WARNING:Xst:647 - Input <g<4>> is never used.
+WARNING:Xst:647 - Input <g<3>> is never used.
+WARNING:Xst:647 - Input <g<2>> is never used.
+WARNING:Xst:647 - Input <g<1>> is never used.
+WARNING:Xst:647 - Input <g<0>> is never used.
+WARNING:Xst:647 - Input <h<5>> is never used.
+WARNING:Xst:647 - Input <h<4>> is never used.
+WARNING:Xst:647 - Input <h<3>> is never used.
+WARNING:Xst:647 - Input <h<2>> is never used.
+WARNING:Xst:647 - Input <h<1>> is never used.
+WARNING:Xst:647 - Input <h<0>> is never used.
+Unit <eighttoonebusmux> synthesized.
+
+
+Synthesizing Unit <busdflipflop>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/busdflipflop.vhd.
+    Found 6-bit register for signal <q>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <busdflipflop> synthesized.
+
+
+Synthesizing Unit <twotoonebusmux>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/twotoonebusmux.vhd.
+    Found 6 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <twotoonebusmux> synthesized.
+
+
+Synthesizing Unit <threebitupdowncounter>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd.
+    Found 1-bit register for signal <err>.
+    Found 3-bit updown counter for signal <tmp>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <threebitupdowncounter> synthesized.
+
+
+Synthesizing Unit <pulsecatch>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/pulsecatch.vhd.
+Unit <pulsecatch> synthesized.
+
+
+Synthesizing Unit <queue>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/queue.vhd.
+Unit <queue> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 5
+  6-bit register                   : 4
+  1-bit register                   : 1
+# Counters                         : 1
+  3-bit updown counter             : 1
+# Multiplexers                     : 4
+  2-to-1 multiplexer               : 4
+
+=========================================================================
+
+
+Starting low level synthesis...
+Optimizing unit <threebitupdowncounter> ...
+
+Optimizing unit <eighttoonebusmux> ...
+
+Optimizing unit <pulsecatch> ...
+
+Optimizing unit <queue> ...
+
+Building and optimizing final netlist ...
+
+=========================================================================
+Final Results
+Top Level Output File Name         : queue
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Target Technology                  : spartan2
+Keep Hierarchy                     : No
+Macro Generator                    : macro+
+
+Macro Statistics
+# Registers                        : 6
+  6-bit register                   : 4
+  1-bit register                   : 1
+  3-bit register                   : 1
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 92
+#      GND                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 27
+#      LUT3                        : 12
+#      LUT3_D                      : 1
+#      LUT4                        : 47
+#      MUXF5                       : 3
+# FlipFlops/Latches                : 28
+#      FDC                         : 25
+#      FDCE                        : 3
+# IO Buffers                       : 19
+#      IBUF                        : 11
+#      OBUF                        : 8
+=========================================================================
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+u11_I_y2_OO_OO_:O                  | NONE(*)(u18_q_5)       | 29    |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.364ns (Maximum Frequency: 106.792MHz)
+   Minimum input arrival time before clock: 9.746ns
+   Maximum output required time after clock: 13.705ns
+   Maximum combinational path delay: 14.087ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'u11_I_y2_OO_OO_:O'
+Delay:               9.364ns (Levels of Logic = 2)
+  Source:            u12_tmp_1
+  Destination:       u12_tmp_2
+  Source Clock:      u11_I_y2_OO_OO_:O rising
+  Destination Clock: u11_I_y2_OO_OO_:O rising
+
+  Data Path: u12_tmp_1 to u12_tmp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDCE:C->Q             21   1.292   3.250  u12_tmp_1 (u12_tmp_1)
+    LUT3:I0->O             1   0.653   1.150  u12_I_1_LUT_25 (u12_N47)
+    LUT4:I2->O             3   0.653   1.480  u12_I__n0018 (u12_N50)
+    FDCE:CE                    0.886          u12_tmp_2
+    ----------------------------------------
+    Total                      9.364ns (3.484ns logic, 5.880ns route)
+                                       (37.2% logic, 62.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u11_I_y2_OO_OO_:O'
+Offset:              9.746ns (Levels of Logic = 3)
+  Source:            push
+  Destination:       u12_tmp_2
+  Destination Clock: u11_I_y2_OO_OO_:O rising
+
+  Data Path: push to u12_tmp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O             36   0.924   4.000  u9 (pushbuf)
+    LUT3:I1->O             1   0.653   1.150  u12_I_XXL_22 (u12_N38)
+    LUT4:I0->O             3   0.653   1.480  u12_I__n0018 (u12_N50)
+    FDCE:CE                    0.886          u12_tmp_2
+    ----------------------------------------
+    Total                      9.746ns (3.116ns logic, 6.630ns route)
+                                       (32.0% logic, 68.0% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u11_I_y2_OO_OO_:O'
+Offset:              13.705ns (Levels of Logic = 3)
+  Source:            u12_tmp_1
+  Destination:       output_0
+  Source Clock:      u11_I_y2_OO_OO_:O rising
+
+  Data Path: u12_tmp_1 to output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDCE:C->Q             21   1.292   3.250  u12_tmp_1 (u12_tmp_1)
+    LUT4:I1->O             1   0.653   1.150  u21_I_1_LUT_34 (u21_N72)
+    LUT3:I1->O             1   0.653   1.150  u21_I_o_0 (output_0_OBUF)
+    OBUF:I->O                  5.557          output_0_OBUF (output_0)
+    ----------------------------------------
+    Total                     13.705ns (8.155ns logic, 5.550ns route)
+                                       (59.5% logic, 40.5% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               14.087ns (Levels of Logic = 4)
+  Source:            push
+  Destination:       output_0
+
+  Data Path: push to output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O             36   0.924   4.000  u9 (pushbuf)
+    LUT4:I0->O             1   0.653   1.150  u21_I_0_LUT_7 (u21_N62)
+    LUT3:I0->O             1   0.653   1.150  u21_I_o_0 (output_0_OBUF)
+    OBUF:I->O                  5.557          output_0_OBUF (output_0)
+    ----------------------------------------
+    Total                     14.087ns (7.787ns logic, 6.300ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+CPU : 2.23 / 2.27 s | Elapsed : 2.00 / 2.00 s
+ 
+--> 
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/xst.exe' completed successfully.
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Simulate Behavioral VHDL Model
+
+Starting: 'exewrap @__updateTBW_exewrap.rsp'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\qtest.tbw" '
+
+
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/tb.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_vhdTOfdo_exewrap.rsp'
+
+
+Starting: 'xilperl C:/Programlar/Xilinx/data/projnav/createfdo.pl __vhdTOfdo.rsp '
+
+
+Opening __vhdTOfdo.rsp
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -command xilperl __checkModelSim.pl'
+
+
+Starting: 'xilperl __checkModelSim.pl '
+
+
+EXEWRAP detected that program 'xilperl' completed successfully.
+
+Done: completed successfully.
+
+Launching: 'exewrap @_msim_simBehavVhdlModel_exewrap.rsp'
+
+
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Edit Implementation Constraints (Constraints Editor)
+
+Starting: 'exewrap @__ednTOngd_exewrap.rsp'
+
+
+Starting: 'ngdbuild -f __ngdbuild.rsp '
+
+
+Release 4.2.03i - ngdbuild E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd c:/programlar/xilinx/bin/queue/_ngo -nt timestamp -p
+xc2s30-tq144-5 queue.ngc queue.ngd 
+
+Reading NGO file "C:/Programlar/Xilinx/bin/queue/queue.ngc" ...
+Reading component libraries for design expansion...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "queue.ngd" ...
+
+Writing NGDBUILD log file "queue.bld"...
+
+NGDBUILD done.
+EXEWRAP detected that program 'ngdbuild' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @__constEditor_exewrap.rsp'
+
+
+Creating TCL Process
+copy Foundation UCF template
+Starting: 'constraints_editor queue.ucf queue.ngd'
+
+
+Tcl C:/Programlar/Xilinx/data/projnav/constEditor.tcl detected that program 'constraints_editor queue.ucf queue.ngd' completed successfully.
+
+call Constraints Editor completed
+Starting: 'chkdate'
+
+
+Tcl C:/Programlar/Xilinx/data/projnav/constEditor.tcl detected that program 'chkdate' completed successfully.
+
+ Implementation Results have been RESET !
+ Please re-run the 'Implement Design' process so that your constraint changes are incorporated.
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Generate Programming File
+
+Starting: 'exewrap @__ednTOngd_exewrap.rsp'
+
+
+Starting: 'ngdbuild -f __ngdbuild.rsp '
+
+
+Release 4.2.03i - ngdbuild E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd c:/programlar/xilinx/bin/queue/_ngo -nt timestamp -p
+xc2s30-tq144-5 queue.ngc queue.ngd 
+
+Reading NGO file "C:/Programlar/Xilinx/bin/queue/queue.ngc" ...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "queue.ucf" ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "queue.ngd" ...
+
+Writing NGDBUILD log file "queue.bld"...
+
+NGDBUILD done.
+EXEWRAP detected that program 'ngdbuild' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_ngdTOnc1_exewrap.rsp'
+
+
+Creating TCL Process
+Starting: 'map -f _map.rsp'
+
+
+Release 4.2.03i - Map E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+Using target part "2s30tq144-5".
+Removing unused or disabled logic...
+Running cover...
+Writing file queue.ngm...
+Running directed packing...
+Running delay-based packing...
+Running related packing...
+Writing design file "queue.ncd"...
+
+Design Summary:
+   Number of errors:      0
+   Number of warnings:    1
+   Number of Slices:                 44 out of    432   10%
+   Number of Slices containing
+      unrelated logic:                0 out of     44    0%
+   Number of Slice Flip Flops:       28 out of    864    3%
+   Number of 4 input LUTs:           86 out of    864    9%
+   Number of bonded IOBs:            19 out of     92   20%
+Total equivalent gate count for design:  749
+Additional JTAG gate count for IOBs:  912
+
+Mapping completed.
+See MAP report file "queue.mrp" for details.
+Tcl C:/Programlar/Xilinx/data/projnav/_map.tcl detected that program 'map -f _map.rsp' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @_nc1TOncd_exewrap.rsp'
+
+
+Creating TCL Process
+Found _prepar.rsp
+Starting: 'par -f _par.rsp'
+
+
+Release 4.2.03i - Par E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+
+
+WARNING:Par:69 - Option "-xe" overrides some effects of "-ol".
+
+
+Constraints file: queue.pcf
+
+Loading design for application par from file par_temp.ncd.
+   "queue" is an NCD, version 2.37, device xc2s30, package tq144, speed -5
+Loading device for application par from file '2s30.nph' in environment
+C:/Programlar/Xilinx.
+Device speed data version:  PRELIMINARY 1.23 2001-12-19.
+
+
+Resolving physical constraints.
+Finished resolving physical constraints.
+
+Device utilization summary:
+
+   Number of External IOBs            19 out of 92     20%
+      Number of LOCed External IOBs   19 out of 19    100%
+
+   Number of SLICEs                   44 out of 432    10%
+
+
+
+
+Overall effort level (-ol):   2 (set by user)
+Placer effort level (-pl):    2 (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    2 (set by user)
+Extra effort level (-xe):     0 (set by user)
+
+Starting the placer. REAL time: 0 secs 
+Placement pass 1 ........
+Placer score = 7845
+Placement pass 2 ......
+Placer score = 6150
+Optimizing ... 
+Placer score = 4500
+All IOBs have been constrained to specific sites.
+Placer completed in real time: 0 secs 
+
+Dumping design to file queue.ncd.
+
+Total REAL time to Placer completion: 0 secs 
+Total CPU time to Placer completion: 0 secs 
+
+0 connection(s) routed; 348 unrouted.
+Starting router resource preassignment
+Completed router resource preassignment. REAL time: 0 secs 
+Starting iterative routing. 
+Routing active signals.
+.....
+End of iteration 1 
+348 successful; 0 unrouted; (0) REAL time: 0 secs 
+Constraints are met. 
+Total REAL time: 0 secs 
+Total CPU  time: 0 secs 
+End of route.  348 routed (100.00%); 0 unrouted.
+No errors found. 
+Completely routed. 
+
+This design was run without timing constraints.  It is likely that much better
+circuit performance can be obtained by trying either or both of the following:
+
+  - Enabling the Delay Based Cleanup router pass, if not already enabled
+  - Supplying timing constraints in the input design
+
+
+Total REAL time to Router completion: 0 secs 
+Total CPU time to Router completion: 0 secs 
+
+Generating PAR statistics.
+Dumping design to file queue.ncd.
+
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 0 secs 
+Total CPU time to PAR completion: 0 secs 
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+PAR done.
+Tcl C:/Programlar/Xilinx/data/projnav/_par.tcl detected that program 'par -f _par.rsp' completed successfully.
+
+PAR completed successfully
+Done: completed successfully.
+
+Starting: 'exewrap -tcl -command C:/Programlar/Xilinx/data/projnav/_bitgen.tcl bitgen.rsp queue'
+
+
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -tcl -command C:/Programlar/Xilinx/data/projnav/_utTObit.tcl queue'
+
+
+Creating TCL Process
+Starting: 'bitgen -f queue.ut queue.ncd'
+
+
+Release 4.2.03i - Bitgen E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+
+Loading design for application Bitgen from file queue.ncd.
+   "queue" is an NCD, version 2.37, device xc2s30, package tq144, speed -5
+Loading device for application Bitgen from file '2s30.nph' in environment
+C:/Programlar/Xilinx.
+Opened constraints file queue.pcf.
+
+Mon Jun 06 01:35:39 2005
+
+Running DRC.
+WARNING:DesignRules:372 - Netcheck: Gated clock. Clock net N254 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+DRC detected 0 errors and 1 warnings.
+Creating bit map...
+Saving bit stream in "queue.bit".
+Bitstream generation is complete.
+Tcl C:/Programlar/Xilinx/data/projnav/_utTObit.tcl detected that program 'bitgen -f queue.ut queue.ncd' completed successfully.
+
+
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Edit Implementation Constraints (Constraints Editor)
+
+Starting: 'exewrap @__pulsecatch_2prj_exewrap.rsp'
+
+
+Creating TCL Process
+Done: completed successfully.
+
+Starting: 'exewrap -tapkeep -mode pipe -tcl -command C:/Programlar/Xilinx/data/projnav/_filesAllClean.tcl _XSTClean.rsp 0'
+
+
+Creating TCL Process
+Cleaning Up Project
+deleting directory: ./xst
+Finished cleaning up project
+Done: completed successfully.
+
+Starting: 'exewrap -mode pipe -tapkeep -command C:/Programlar/Xilinx/bin/nt/xst.exe -ifn pulsecatch.xst -ofn pulsecatch.syr'
+
+
+Starting: 'C:/Programlar/Xilinx/bin/nt/xst.exe -ifn pulsecatch.xst -ofn pulsecatch.syr '
+
+
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : pulsecatch.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : pulsecatch
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : pulsecatch
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/pulsecatch.vhd in Library work.
+Entity <pulsecatch> (Architecture <behavioral>) compiled.
+
+Analyzing Entity <pulsecatch> (Architecture <behavioral>).
+Entity <pulsecatch> analyzed. Unit <pulsecatch> generated.
+
+
+Synthesizing Unit <pulsecatch>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/pulsecatch.vhd.
+Unit <pulsecatch> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+
+Starting low level synthesis...
+Optimizing unit <pulsecatch> ...
+
+Building and optimizing final netlist ...
+
+=========================================================================
+Final Results
+Top Level Output File Name         : pulsecatch
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Target Technology                  : spartan2
+Keep Hierarchy                     : No
+Macro Generator                    : macro+
+
+Design Statistics
+# IOs                              : 3
+
+Cell Usage :
+# BELS                             : 2
+#      LUT3                        : 1
+#      LUT4                        : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      OBUF                        : 1
+=========================================================================
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 11.807ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               11.807ns (Levels of Logic = 4)
+  Source:            p
+  Destination:       z
+
+  Data Path: p to z
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O              2   0.924   1.340  p_IBUF (p_IBUF)
+    LUT3:I0->O             2   0.653   1.340  I_b_OO_OO_ (name_to_delete10)
+    LUT4:I3->O             2   0.653   1.340  I_y2_OO_OO_ (z_OBUF)
+    OBUF:I->O                  5.557          z_OBUF (z)
+    ----------------------------------------
+    Total                     11.807ns (7.787ns logic, 4.020ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+CPU : 0.36 / 0.39 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+EXEWRAP detected that program 'C:/Programlar/Xilinx/bin/nt/xst.exe' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @__ednTOngd_exewrap.rsp'
+
+
+Starting: 'ngdbuild -f __ngdbuild.rsp '
+
+
+Release 4.2.03i - ngdbuild E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd c:/programlar/xilinx/bin/queue/_ngo -nt timestamp -p
+xc2s30-tq144-5 pulsecatch.ngc pulsecatch.ngd 
+
+Reading NGO file "C:/Programlar/Xilinx/bin/queue/pulsecatch.ngc" ...
+Reading component libraries for design expansion...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "pulsecatch.ngd" ...
+
+Writing NGDBUILD log file "pulsecatch.bld"...
+
+NGDBUILD done.
+EXEWRAP detected that program 'ngdbuild' completed successfully.
+
+Done: completed successfully.
+
+Starting: 'exewrap @__constEditor_exewrap.rsp'
+
+
+Creating TCL Process
+copy Foundation UCF template
+Starting: 'constraints_editor pulsecatch.ucf pulsecatch.ngd'
+
+
+Tcl C:/Programlar/Xilinx/data/projnav/constEditor.tcl detected that program 'constraints_editor pulsecatch.ucf pulsecatch.ngd' completed successfully.
+
+call Constraints Editor completed
+Starting: 'chkdate'
+
+
+Tcl C:/Programlar/Xilinx/data/projnav/constEditor.tcl detected that program 'chkdate' completed successfully.
+
+ Existing implementation results have been retained !
+ To incorporate your constraint changes, right click on the 'Implement Design' process and select 'Rerun All'.
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Edit Implementation Constraints (Constraints Editor)
+
+Starting: 'exewrap @__constEditor_exewrap.rsp'
+
+
+Creating TCL Process
+Starting: 'constraints_editor queue.ucf queue.ngd'
+
+
+Tcl C:/Programlar/Xilinx/data/projnav/constEditor.tcl detected that program 'constraints_editor queue.ucf queue.ngd' completed successfully.
+
+call Constraints Editor completed
+Starting: 'chkdate'
+
+
+Tcl C:/Programlar/Xilinx/data/projnav/constEditor.tcl detected that program 'chkdate' completed successfully.
+
+ Existing implementation results have been retained !
+ To incorporate your constraint changes, right click on the 'Implement Design' process and select 'Rerun All'.
+Done: completed successfully.
+
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Edit Implementation Constraints (Constraints Editor)
+
+Starting: 'exewrap @__constEditor_exewrap.rsp'
+
+
+Creating TCL Process
+Starting: 'constraints_editor queue.ucf queue.ngd'
+
+
+Tcl C:/Programlar/Xilinx/data/projnav/constEditor.tcl detected that program 'constraints_editor queue.ucf queue.ngd' completed successfully.
+
+call Constraints Editor completed
+Starting: 'chkdate'
+
+
+Tcl C:/Programlar/Xilinx/data/projnav/constEditor.tcl detected that program 'chkdate' completed successfully.
+
+ Existing implementation results have been retained !
+ To incorporate your constraint changes, right click on the 'Implement Design' process and select 'Rerun All'.
+Done: completed successfully.
+

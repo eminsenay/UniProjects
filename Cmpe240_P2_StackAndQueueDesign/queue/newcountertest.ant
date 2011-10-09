@@ -1,0 +1,185 @@
+-- C:\PROGRAMLAR\XILINX\BIN\QUEUE\NEWCOUNTERTEST.ANT
+-- VHDL Annotation Test Bench created by
+-- HDL Bencher 4.1i
+-- Sun Jun 05 13:21:48 2005
+
+LIBRARY  IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+LIBRARY ieee;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY testbench IS
+END testbench;
+
+ARCHITECTURE testbench_arch OF testbench IS
+-- If you get a compiler error on the following line,
+-- from the menu do Options->Configuration select VHDL 87
+FILE RESULTS: TEXT OPEN WRITE_MODE IS "c:\programlar\xilinx\bin\queue\newcountertest.ano";
+	COMPONENT threebitupdowncounter
+		PORT (
+			clk : in  std_logic;
+			CLR : in  std_logic;
+			up : in  std_logic;
+			down : in  std_logic;
+			Q : out  std_logic_vector (2 DOWNTO 0);
+			err : out  std_logic;
+			full : out  std_logic;
+			empty : out  std_logic
+		);
+	END COMPONENT;
+
+	SIGNAL clk : std_logic;
+	SIGNAL CLR : std_logic;
+	SIGNAL up : std_logic;
+	SIGNAL down : std_logic;
+	SIGNAL Q : std_logic_vector (2 DOWNTO 0);
+	SIGNAL err : std_logic;
+	SIGNAL full : std_logic;
+	SIGNAL empty : std_logic;
+
+BEGIN
+	UUT : threebitupdowncounter
+	PORT MAP (
+		clk => clk,
+		CLR => CLR,
+		up => up,
+		down => down,
+		Q => Q,
+		err => err,
+		full => full,
+		empty => empty
+	);
+
+	PROCESS -- clock process
+		VARIABLE TX_TIME : INTEGER :=0;
+
+		PROCEDURE ANNOTATE_Q(
+			TX_TIME : INTEGER
+		) IS
+			VARIABLE TX_STR : String(1 to 4096);
+			VARIABLE TX_LOC : LINE;
+		BEGIN
+			write(TX_LOC,string'("Annotate["));
+			write(TX_LOC, TX_TIME);
+			write(TX_LOC,string'(",Q,"));
+			write(TX_LOC, Q);
+			write(TX_LOC, string'("]"));
+			TX_STR(TX_LOC.all'range) := TX_LOC.all;
+			writeline(results, TX_LOC);
+			Deallocate(TX_LOC);
+		END;
+
+		PROCEDURE ANNOTATE_err(
+			TX_TIME : INTEGER
+		) IS
+			VARIABLE TX_STR : String(1 to 4096);
+			VARIABLE TX_LOC : LINE;
+		BEGIN
+			write(TX_LOC,string'("Annotate["));
+			write(TX_LOC, TX_TIME);
+			write(TX_LOC,string'(",err,"));
+			write(TX_LOC, err);
+			write(TX_LOC, string'("]"));
+			TX_STR(TX_LOC.all'range) := TX_LOC.all;
+			writeline(results, TX_LOC);
+			Deallocate(TX_LOC);
+		END;
+
+		PROCEDURE ANNOTATE_full(
+			TX_TIME : INTEGER
+		) IS
+			VARIABLE TX_STR : String(1 to 4096);
+			VARIABLE TX_LOC : LINE;
+		BEGIN
+			write(TX_LOC,string'("Annotate["));
+			write(TX_LOC, TX_TIME);
+			write(TX_LOC,string'(",full,"));
+			write(TX_LOC, full);
+			write(TX_LOC, string'("]"));
+			TX_STR(TX_LOC.all'range) := TX_LOC.all;
+			writeline(results, TX_LOC);
+			Deallocate(TX_LOC);
+		END;
+
+		PROCEDURE ANNOTATE_empty(
+			TX_TIME : INTEGER
+		) IS
+			VARIABLE TX_STR : String(1 to 4096);
+			VARIABLE TX_LOC : LINE;
+		BEGIN
+			write(TX_LOC,string'("Annotate["));
+			write(TX_LOC, TX_TIME);
+			write(TX_LOC,string'(",empty,"));
+			write(TX_LOC, empty);
+			write(TX_LOC, string'("]"));
+			TX_STR(TX_LOC.all'range) := TX_LOC.all;
+			writeline(results, TX_LOC);
+			Deallocate(TX_LOC);
+		END;
+
+	BEGIN
+		CLOCK_LOOP : LOOP
+		clk <= transport '0';
+		WAIT FOR 10 ns;
+		TX_TIME := TX_TIME + 10;
+		clk <= transport '1';
+		WAIT FOR 10 ns;
+		TX_TIME := TX_TIME + 10;
+		ANNOTATE_Q(TX_TIME);
+		ANNOTATE_err(TX_TIME);
+		ANNOTATE_full(TX_TIME);
+		ANNOTATE_empty(TX_TIME);
+		WAIT FOR 40 ns;
+		TX_TIME := TX_TIME + 40;
+		clk <= transport '0';
+		WAIT FOR 40 ns;
+		TX_TIME := TX_TIME + 40;
+		END LOOP CLOCK_LOOP;
+	END PROCESS;
+
+	PROCESS
+		VARIABLE TX_OUT : LINE;
+
+		BEGIN
+		-- --------------------
+		CLR <= transport '1';
+		up <= transport '0';
+		down <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=100 ns
+		CLR <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=200 ns
+		up <= transport '1';
+		-- --------------------
+		WAIT FOR 400 ns; -- Time=600 ns
+		up <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=700 ns
+		down <= transport '1';
+		-- --------------------
+		WAIT FOR 400 ns; -- Time=1100 ns
+		up <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=1200 ns
+		down <= transport '0';
+		-- --------------------
+		WAIT FOR 310 ns; -- Time=1510 ns
+		-- --------------------
+
+		write(TX_OUT, string'("Total[]"));
+		writeline(results, TX_OUT);
+		ASSERT (FALSE) REPORT
+			"Success! Simulation for annotation completed"
+			SEVERITY FAILURE;
+	END PROCESS;
+END testbench_arch;
+
+CONFIGURATION threebitupdowncounter_cfg OF testbench IS
+	FOR testbench_arch
+	END FOR;
+END threebitupdowncounter_cfg;

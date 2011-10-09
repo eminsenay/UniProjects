@@ -1,0 +1,36 @@
+V1 24
+EN work/EIGHTTOONEBUSMUX FL C:/Programlar/Xilinx/bin/stack/eighttoonebusmux.vhd \
+      PB ieee/STD_LOGIC_1164 PB ieee/STD_LOGIC_ARITH PB ieee/STD_LOGIC_UNSIGNED
+EN work/STACK           FL C:/Programlar/Xilinx/bin/stack/stack.vhd \
+      PB ieee/STD_LOGIC_1164 PB ieee/STD_LOGIC_ARITH PB ieee/STD_LOGIC_UNSIGNED \
+      PH unisim/VCOMPONENTS
+AR work/TWOTOONEBUSMUX/BEHAVIORAL \
+      FL C:/Programlar/Xilinx/bin/stack/twotoonebusmux.vhd EN work/TWOTOONEBUSMUX
+FL C:/Programlar/Xilinx/bin/stack/twotoonebusmux.vhd 2005/06/05.13:04:48
+EN work/TWOTOONEBUSMUX  FL C:/Programlar/Xilinx/bin/stack/twotoonebusmux.vhd \
+      PB ieee/STD_LOGIC_1164 PB ieee/STD_LOGIC_ARITH PB ieee/STD_LOGIC_UNSIGNED
+FL C:/Programlar/Xilinx/bin/stack/threebitupdowncounter.vhd 2005/06/05.12:58:21
+FL C:/Programlar/Xilinx/bin/stack/pulsecatch.vhd 2005/06/05.13:42:07
+EN work/THREEBITUPDOWNCOUNTER \
+      FL C:/Programlar/Xilinx/bin/stack/threebitupdowncounter.vhd \
+      PB ieee/STD_LOGIC_1164 PB ieee/STD_LOGIC_ARITH PB ieee/STD_LOGIC_UNSIGNED
+FL C:/Programlar/Xilinx/bin/stack/eighttoonebusmux.vhd 2005/06/05.13:01:44
+AR work/BUSDFLIPFLOP/BEHAVIORAL \
+      FL C:/Programlar/Xilinx/bin/stack/busdflipflop.vhd EN work/BUSDFLIPFLOP
+EN work/BUSDFLIPFLOP    FL C:/Programlar/Xilinx/bin/stack/busdflipflop.vhd \
+      PB ieee/STD_LOGIC_1164 PB ieee/STD_LOGIC_ARITH PB ieee/STD_LOGIC_UNSIGNED
+FL C:/Programlar/Xilinx/bin/stack/busdflipflop.vhd 2005/06/05.13:03:20
+AR work/PULSECATCH/BEHAVIORAL FL C:/Programlar/Xilinx/bin/stack/pulsecatch.vhd \
+      EN work/PULSECATCH
+AR work/STACK/BEHAVIORAL FL C:/Programlar/Xilinx/bin/stack/stack.vhd \
+      EN work/STACK     CP IBUF           CP PULSECATCH     CP THREEBITUPDOWNCOUNTER \
+      CP EIGHTTOONEBUSMUX CP BUSDFLIPFLOP CP TWOTOONEBUSMUX
+AR work/THREEBITUPDOWNCOUNTER/BEHAVIORAL \
+      FL C:/Programlar/Xilinx/bin/stack/threebitupdowncounter.vhd \
+      EN work/THREEBITUPDOWNCOUNTER
+EN work/PULSECATCH      FL C:/Programlar/Xilinx/bin/stack/pulsecatch.vhd \
+      PB ieee/STD_LOGIC_1164 PB ieee/STD_LOGIC_ARITH PB ieee/STD_LOGIC_UNSIGNED
+FL C:/Programlar/Xilinx/bin/stack/stack.vhd 2005/06/05.22:56:04
+AR work/EIGHTTOONEBUSMUX/BEHAVIORAL \
+      FL C:/Programlar/Xilinx/bin/stack/eighttoonebusmux.vhd \
+      EN work/EIGHTTOONEBUSMUX

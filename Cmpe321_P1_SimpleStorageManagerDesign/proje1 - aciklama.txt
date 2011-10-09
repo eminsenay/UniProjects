@@ -1,0 +1,28 @@
+Paper Design of a Simple Storage Manager for a DBMS
+
+    * The deadline of the project is 12.04.2006 / Wednesday (17:00).
+    * Specifications:
+          o In this project you will design a simple storage manager. In the implementation of the storage manager the user will be able to make any of the following operations
+
+            Table Operations:
+             
+                + Create a table of a certain type (fields of the table and the primary key will be determined by the user)
+                + Delete a table.
+                + List all the tables in the database.
+
+            Record Operations:
+             
+                + Insert a record to a specified table.
+                + Delete a record according to the primary key from a specified table.
+                + List all records in a specified table.
+                + Search for a record according to the primary key field.
+
+       
+          o You may assume that the type of each field is string
+
+           
+    * Submission: You should submit a report in paper format, including the following sections:                                      
+          o Introduction-including your assumptions and a brief summary of your work
+          o Data Structures-system catalog, table format, record format,page format...(draw figures for illustration)
+          o Algorithms -write pseudocodes for table and record operations.
+          o Conclusion- evaluate your work

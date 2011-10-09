@@ -1,0 +1,6 @@
+-dd c:/programlar/xilinx/bin/queue/_ngo
+-nt timestamp
+
+-p xc2s30-tq144-5
+pulsecatch.ngc
+pulsecatch.ngd

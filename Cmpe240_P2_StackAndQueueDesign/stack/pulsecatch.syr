@@ -1,0 +1,154 @@
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.03 s | Elapsed : 0.00 / 1.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : pulsecatch.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : pulsecatch
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : pulsecatch
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/stack/pulsecatch.vhd in Library work.
+Entity <pulsecatch> (Architecture <behavioral>) compiled.
+
+Analyzing Entity <pulsecatch> (Architecture <behavioral>).
+Entity <pulsecatch> analyzed. Unit <pulsecatch> generated.
+
+
+Synthesizing Unit <pulsecatch>.
+    Related source file is C:/Programlar/Xilinx/bin/stack/pulsecatch.vhd.
+Unit <pulsecatch> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+
+Starting low level synthesis...
+Optimizing unit <pulsecatch> ...
+
+Building and optimizing final netlist ...
+
+=========================================================================
+Final Results
+Top Level Output File Name         : pulsecatch
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Target Technology                  : spartan2
+Keep Hierarchy                     : No
+Macro Generator                    : macro+
+
+Design Statistics
+# IOs                              : 3
+
+Cell Usage :
+# BELS                             : 2
+#      LUT3                        : 1
+#      LUT4                        : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      OBUF                        : 1
+=========================================================================
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 11.807ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               11.807ns (Levels of Logic = 4)
+  Source:            p
+  Destination:       z
+
+  Data Path: p to z
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O              2   0.924   1.340  p_IBUF (p_IBUF)
+    LUT3:I0->O             2   0.653   1.340  I_b_OO_OO_ (name_to_delete10)
+    LUT4:I3->O             2   0.653   1.340  I_y2_OO_OO_ (z_OBUF)
+    OBUF:I->O                  5.557          z_OBUF (z)
+    ----------------------------------------
+    Total                     11.807ns (7.787ns logic, 4.020ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+CPU : 0.50 / 0.53 s | Elapsed : 0.00 / 1.00 s
+ 
+--> 

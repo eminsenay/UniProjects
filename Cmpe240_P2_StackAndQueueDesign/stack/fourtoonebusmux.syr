@@ -1,0 +1,68 @@
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : fourtoonebusmux.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : fourtoonebusmux
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : fourtoonebusmux
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/stack/fourtoonebusmux.vhd in Library work.
+ERROR:HDLParsers:162 - C:/Programlar/Xilinx/bin/stack/fourtoonebusmux.vhd Line 7. Read symbol ')', expecting IDENTIFIER.
+CPU : 0.14 / 0.19 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 

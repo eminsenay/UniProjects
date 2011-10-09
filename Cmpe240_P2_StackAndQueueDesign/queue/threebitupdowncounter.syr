@@ -1,0 +1,222 @@
+Release 4.2.03i - xst E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter overwrite set to YES
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.05 s | Elapsed : 0.00 / 0.00 s
+ 
+--> =========================================================================
+---- Source Parameters
+Input Format                       : VHDL
+Input File Name                    : threebitupdowncounter.prj
+
+---- Target Parameters
+Target Device                      : xc2s30-tq144-5
+Output File Name                   : threebitupdowncounter
+Output Format                      : NGC
+Target Technology                  : spartan2
+
+---- Source Options
+Entity Name                        : threebitupdowncounter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Flip-Flop Type                 : D
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Complex Clock Enable Extraction    : YES
+ROM Extraction                     : Yes
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+Add Generic Clock Buffer(BUFG)     : 4
+Global Maximum Fanout              : 100
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Speed Grade                        : 5
+
+---- General Options
+Optimization Criterion             : Speed
+Optimization Effort                : 1
+Check Attribute Syntax             : YES
+Keep Hierarchy                     : No
+Global Optimization                : AllClockNets
+Write Timing Constraints           : No
+
+=========================================================================
+
+Compiling vhdl file C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd in Library work.
+Entity <threebitupdowncounter> (Architecture <behavioral>) compiled.
+
+Analyzing Entity <threebitupdowncounter> (Architecture <behavioral>).
+Entity <threebitupdowncounter> analyzed. Unit <threebitupdowncounter> generated.
+
+
+Synthesizing Unit <threebitupdowncounter>.
+    Related source file is C:/Programlar/Xilinx/bin/queue/threebitupdowncounter.vhd.
+    Found 1-bit register for signal <err>.
+    Found 3-bit updown counter for signal <tmp>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <threebitupdowncounter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 1
+  1-bit register                   : 1
+# Counters                         : 1
+  3-bit updown counter             : 1
+
+=========================================================================
+
+
+Starting low level synthesis...
+Optimizing unit <threebitupdowncounter> ...
+
+Building and optimizing final netlist ...
+
+=========================================================================
+Final Results
+Top Level Output File Name         : threebitupdowncounter
+Output Format                      : NGC
+Optimization Criterion             : Speed
+Target Technology                  : spartan2
+Keep Hierarchy                     : No
+Macro Generator                    : macro+
+
+Macro Statistics
+# Registers                        : 2
+  3-bit register                   : 1
+  1-bit register                   : 1
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 17
+#      GND                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 3
+#      LUT3                        : 4
+#      LUT3_D                      : 1
+#      LUT4                        : 4
+#      MUXF5                       : 3
+# FlipFlops/Latches                : 4
+#      FDC                         : 1
+#      FDCE                        : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 3
+#      OBUF                        : 6
+=========================================================================
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 4     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.234ns (Maximum Frequency: 121.448MHz)
+   Minimum input arrival time before clock: 7.596ns
+   Maximum output required time after clock: 10.772ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'clk'
+Delay:               8.234ns (Levels of Logic = 2)
+  Source:            tmp_2
+  Destination:       tmp_0
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: tmp_2 to tmp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDCE:C->Q              9   1.292   2.120  tmp_2 (tmp_2)
+    LUT3:I0->O             1   0.653   1.150  I_XXL_22 (N38)
+    LUT4:I0->O             3   0.653   1.480  I__n0018 (N50)
+    FDCE:CE                    0.886          tmp_0
+    ----------------------------------------
+    Total                      8.234ns (3.484ns logic, 4.750ns route)
+                                       (42.3% logic, 57.7% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+Offset:              7.596ns (Levels of Logic = 3)
+  Source:            up
+  Destination:       tmp_0
+  Destination Clock: clk rising
+
+  Data Path: up to tmp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IBUF:I->O              6   0.924   1.850  up_IBUF (up_IBUF)
+    LUT3:I1->O             1   0.653   1.150  I_XXL_22 (N38)
+    LUT4:I0->O             3   0.653   1.480  I__n0018 (N50)
+    FDCE:CE                    0.886          tmp_0
+    ----------------------------------------
+    Total                      7.596ns (3.116ns logic, 4.480ns route)
+                                       (41.0% logic, 59.0% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+Offset:              10.772ns (Levels of Logic = 2)
+  Source:            tmp_2
+  Destination:       empty
+  Source Clock:      clk rising
+
+  Data Path: tmp_2 to empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    FDCE:C->Q              9   1.292   2.120  tmp_2 (tmp_2)
+    LUT3:I0->O             1   0.653   1.150  I_empty (empty_OBUF)
+    OBUF:I->O                  5.557          empty_OBUF (empty)
+    ----------------------------------------
+    Total                     10.772ns (7.502ns logic, 3.270ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+CPU : 1.22 / 1.26 s | Elapsed : 1.00 / 1.00 s
+ 
+--> 

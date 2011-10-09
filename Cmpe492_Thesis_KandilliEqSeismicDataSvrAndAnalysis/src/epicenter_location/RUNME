@@ -1,0 +1,11 @@
+#!/bin/sh
+LCG_CATALOG_TYPE=lfc
+LFC_HOST=lfc.ulakbim.gov.tr
+LCG_GFAL_VO=trgridd
+LFC_HOME=/grid/trgridd
+export LCG_CATALOG_TYPE
+export LFC_HOST
+export LCG_GFAL_VO
+export LFC_HOME
+export CLASSPATH=$CLASSPATH:./mysql-connector-java-3.1.12-bin.jar
+java selectQuery

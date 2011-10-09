@@ -1,0 +1,5 @@
+[queue]
+Design Entry Utilities=true
+User Constraints=true
+[qtest.tbw]
+ModelSim Simulator=true

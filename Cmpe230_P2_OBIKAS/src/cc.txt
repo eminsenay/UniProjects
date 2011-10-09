@@ -1,0 +1,42 @@
+# LINES STARTING WITH # ARE COMMENTS
+# LIST OF COMPLEMENTARY COURSES
+
+% Department of Computer Engineering
+CMPE 400-599 except 450,492
+
+% Institute of Biomedical Engineering 
+BM 402,595
+
+% Department of Mathematics 
+MATH 291
+MATH 300-599 except 310,336 
+
+% Department of Physics 
+PHYS 311,312,325,411 
+
+% Department of Philosophy 
+PHIL 131,132,331,522,531 
+
+% Department of Psychology 
+PSY 326,327,328,484 
+
+% Department of Molecular Biology and Genetics 
+BIO 101 
+
+% Department of Western Languages and Literature 
+LING 111,302,488 
+
+% Department of Management 
+AD 403,407,452,574 
+
+% Department of Civil Engineering 
+CE 371,381 
+
+% Department of Electrical Engineering 
+EE 300-599 except 301,310,311,312,411,412,444,486,497,588 
+
+% Department of Industrial Engineering 
+IE 300-599 except 306,310,320,341,504 
+
+% Department of Mechanical Engineering 
+ME 437 

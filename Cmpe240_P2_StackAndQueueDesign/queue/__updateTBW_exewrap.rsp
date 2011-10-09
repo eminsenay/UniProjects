@@ -1,0 +1,1 @@
+-tapkeep -mode pipe -command C:/Programlar/Xilinx/bin/nt/tb.exe /u "c:\programlar\xilinx\bin\queue\qtest.tbw"

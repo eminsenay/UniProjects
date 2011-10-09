@@ -1,0 +1,6 @@
+﻿İçindekiler:
+Hazirlik klasöründe kod grubunun JSP öğrenmesi için yapılmış olan forum projesi ve ODD grubunun dizayn dökümanı oluşturmayı öğrenmek için yaptıkları odd bulunuyor.
+v1, v2 ve v3 klasörleri Requirement Analysis Document (RAD), Object Design Document (ODD), Database Design Document (DDD) ve Software Design Document (SDD) ların çeşitli versiyonlarını barındırıyor.
+Sunum.ppt, yapılan sunumu; adimadimsas STS final.doc dosyası da programın gösterimi için sunumdan önce ya da sunum içinde atılması gereken adımları bulunduruyor.
+STS klasöründe Stok takip sistemi kodları geçen seneki SAS (Satın alma sistemi) ve bu seneki BTS (Bütçe takip sistemi) ile birlikte bulunuyor.
+DB klasöründe sistemin çalışabilmesi için gerekli olan veritabanı betikleri bulunuyor.

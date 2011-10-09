@@ -1,0 +1,7 @@
+CMPE 360 HW 1 
+due: March 7
+
+1. Computer problem 1.18 from book, page 48
+2. Given an unknown computer that uses an unknown floating point system, 
+describe how you may determine the number of bits in the mantissa and 
+exponent fields.

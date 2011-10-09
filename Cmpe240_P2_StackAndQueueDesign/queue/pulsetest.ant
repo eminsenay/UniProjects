@@ -1,0 +1,161 @@
+-- C:\PROGRAMLAR\XILINX\BIN\QUEUE\PULSETEST.ANT
+-- VHDL Annotation Test Bench created by
+-- HDL Bencher 4.1i
+-- Sun Jun 05 13:42:09 2005
+
+LIBRARY  IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+LIBRARY ieee;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY testbench IS
+END testbench;
+
+ARCHITECTURE testbench_arch OF testbench IS
+-- If you get a compiler error on the following line,
+-- from the menu do Options->Configuration select VHDL 87
+FILE RESULTS: TEXT OPEN WRITE_MODE IS "c:\programlar\xilinx\bin\queue\pulsetest.ano";
+	COMPONENT pulsecatch
+		PORT (
+			P : in  std_logic;
+			R : in  std_logic;
+			Z : out  std_logic
+		);
+	END COMPONENT;
+
+	SIGNAL P : std_logic;
+	SIGNAL R : std_logic;
+	SIGNAL Z : std_logic;
+
+BEGIN
+	UUT : pulsecatch
+	PORT MAP (
+		P => P,
+		R => R,
+		Z => Z
+	);
+
+	PROCESS -- Annotate outputs process
+		VARIABLE TX_TIME : INTEGER :=0;
+
+		PROCEDURE ANNOTATE_Z(
+			TX_TIME : INTEGER
+		) IS
+			VARIABLE TX_STR : String(1 to 4096);
+			VARIABLE TX_LOC : LINE;
+		BEGIN
+			write(TX_LOC,string'("Annotate["));
+			write(TX_LOC, TX_TIME);
+			write(TX_LOC,string'(",Z,"));
+			write(TX_LOC, Z);
+			write(TX_LOC, string'("]"));
+			TX_STR(TX_LOC.all'range) := TX_LOC.all;
+			writeline(results, TX_LOC);
+			Deallocate(TX_LOC);
+		END;
+
+	BEGIN
+		CHECK_LOOP : LOOP
+		WAIT FOR 50 ns;
+		TX_TIME := TX_TIME + 50;
+		ANNOTATE_Z(TX_TIME);
+		WAIT FOR 50 ns;
+		TX_TIME := TX_TIME + 50;
+		END LOOP CHECK_LOOP;
+	END PROCESS;
+
+	PROCESS
+		VARIABLE TX_OUT : LINE;
+
+		BEGIN
+		-- --------------------
+		P <= transport '0';
+		R <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=100 ns
+		R <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=200 ns
+		P <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=300 ns
+		P <= transport '0';
+		R <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=400 ns
+		R <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=500 ns
+		P <= transport '1';
+		R <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=600 ns
+		R <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=700 ns
+		P <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=800 ns
+		P <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=900 ns
+		R <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=1000 ns
+		P <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=1100 ns
+		R <= transport '0';
+		-- --------------------
+		WAIT FOR 200 ns; -- Time=1300 ns
+		P <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=1400 ns
+		R <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=1500 ns
+		R <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=1600 ns
+		P <= transport '0';
+		-- --------------------
+		WAIT FOR 200 ns; -- Time=1800 ns
+		P <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=1900 ns
+		P <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=2000 ns
+		P <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=2100 ns
+		P <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=2200 ns
+		P <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=2300 ns
+		P <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=2400 ns
+		R <= transport '1';
+		-- --------------------
+		WAIT FOR 200 ns; -- Time=2600 ns
+		-- --------------------
+
+		write(TX_OUT, string'("Total[]"));
+		writeline(results, TX_OUT);
+		ASSERT (FALSE) REPORT
+			"Success! Simulation for annotation completed"
+			SEVERITY FAILURE;
+	END PROCESS;
+END testbench_arch;
+
+CONFIGURATION pulsecatch_cfg OF testbench IS
+	FOR testbench_arch
+	END FOR;
+END pulsecatch_cfg;

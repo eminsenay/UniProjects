@@ -1,0 +1,11 @@
+[
+l("node1",n("node1",[a("OBJECT","node1"),a("COLOR","#d87052"),a("_GO","circle")],[e("n0->n1",[],r("node2")),]))
+,l("node2",n("node2",[a("OBJECT","node2"),a("COLOR","#d87052"),a("_GO","circle")],[e("n1->n2",[],r("node3")),e("n1->n4",[],r("node5")),e("n1->n5",[],r("node6")),]))
+,l("node3",n("node3",[a("OBJECT","node3"),a("COLOR","#d60da3"),a("_GO","circle")],[e("n2->n3",[],r("node4")),e("n2->n6",[],r("node7")),]))
+,l("node4",n("node4",[a("OBJECT","node4"),a("COLOR","#d60da3"),a("_GO","circle")],[e("n3->n2",[],r("node3")),e("n3->n7",[],r("node8")),]))
+,l("node5",n("node5",[a("OBJECT","node5"),a("COLOR","#d87052"),a("_GO","circle")],[e("n4->n0",[],r("node1")),e("n4->n5",[],r("node6")),]))
+,l("node6",n("node6",[a("OBJECT","node6"),a("COLOR","#5ec2ea"),a("_GO","circle")],[e("n5->n6",[],r("node7")),]))
+,l("node7",n("node7",[a("OBJECT","node7"),a("COLOR","#5ec2ea"),a("_GO","circle")],[e("n6->n5",[],r("node6")),e("n6->n7",[],r("node8")),]))
+,l("node8",n("node8",[a("OBJECT","node8"),a("COLOR","#69d5a9"),a("_GO","circle")],[e("n7->n7",[],r("node8")),]))
+,l("node9",n("node9",[a("OBJECT","node9"),a("COLOR","#48a1b5"),a("_GO","circle")],[]))
+]

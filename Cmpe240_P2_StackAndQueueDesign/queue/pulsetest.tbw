@@ -1,0 +1,54 @@
+info x 47 201 0 0 0 0 0 0 VHDLvhdl_genericverilog_generic
+col x 257 0 0 0 0 0 0 0 
+radix x 10 0 0 0 0 0 0 0 
+entity name 0 0 0 0 0 0 0 0 pulsecatch
+term mark 52 0 0 0 0 0 0 0 
+vlib save 0 0 0 0 0 0 0 0 LIBRARY  IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+var add 1 0 0 34 7 13 0 0 Pinstd_logic
+var add 2 0 0 34 8 13 0 0 Rinstd_logic
+var add 3 0 0 34 9 13 0 0 Zoutstd_logic
+vdone xxx 0 0 0 0 0 0 0 0 
+npos xxx 62 0 0 0 0 0 0 0 
+cell fill 1 0 0 0 0 0 0 0 0
+cell fill 1 4 0 0 0 0 0 0 1
+cell fill 1 6 0 0 0 0 0 0 0
+cell fill 1 10 0 0 0 0 0 0 1
+cell fill 1 14 0 0 0 0 0 0 0
+cell fill 1 16 0 0 0 0 0 0 1
+cell fill 1 20 0 0 0 0 0 0 0
+cell fill 1 26 0 0 0 0 0 0 1
+cell fill 1 32 0 0 0 0 0 0 0
+cell fill 1 36 0 0 0 0 0 0 1
+cell fill 1 38 0 0 0 0 0 0 0
+cell fill 1 40 0 0 0 0 0 0 1
+cell fill 1 42 0 0 0 0 0 0 0
+cell fill 1 44 0 0 0 0 0 0 1
+cell fill 1 46 0 0 0 0 0 0 0
+cell fill 2 0 0 0 0 0 0 0 1
+cell fill 2 2 0 0 0 0 0 0 0
+cell fill 2 6 0 0 0 0 0 0 0
+cell fill 2 8 0 0 0 0 0 0 1
+cell fill 2 10 0 0 0 0 0 0 1
+cell fill 2 12 0 0 0 0 0 0 0
+cell fill 2 18 0 0 0 0 0 0 1
+cell fill 2 22 0 0 0 0 0 0 0
+cell fill 2 28 0 0 0 0 0 0 1
+cell fill 2 30 0 0 0 0 0 0 0
+cell fill 2 48 0 0 0 0 0 0 1
+time info 50 50 10 10 50 50 0 1 ns
+font save -14 0 400 49 0 0 0 0 Times New Roman
+src mod 0 948865750 29714875 0 0 0 0 0 pulsecatch.vhd
+utd false 0 0 0 0 0 0 0 0 
+cellenab on 0 0 0 0 0 0 0 0 
+grid on 0 0 0 0 0 0 0 0 
+com add 1 0 50 215 5 0 -71 0 Waveform created by
+HDL Bencher 4.1i
+Source = pulsecatch.vhd
+Sun Jun 05 13:34:58 2005
+type info 0 0 0 0 0 0 0 0 std_logicBITDOWNTO
+type info 31 0 0 0 0 0 0 0 std_logic_vectorVECTORDOWNTO
+opt vhdl87 0 0 0 0 0 0 0 0 

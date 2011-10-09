@@ -1,0 +1,17 @@
+Fit All
+
+Document:  C:\Documents and Settings\emin\My Documents\ders\IE 306\final proje\part2\Input Analyzer\length.txt
+Data File: C:\Documents and Settings\emin\My Documents\ders\IE 306\final proje\part2\Input Analyzer\length.txt
+
+
+Function       Sq Error
+-----------------------
+Lognormal      0.00067
+Gamma          0.00324
+Erlang         0.00545
+Weibull        0.00574
+Beta           0.00747
+Exponential    0.0165
+Normal         0.0362
+Triangular     0.079
+Uniform        0.109

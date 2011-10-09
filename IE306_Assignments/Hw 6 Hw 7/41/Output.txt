@@ -1,0 +1,210 @@
+For patient number 1: 
+Arrival Time : 0
+Start treatment from DoctorA : 0
+Start treatment from DoctorB : 11.5906
+Start treatment from DoctorA again : -1
+End of service Time : 29.5354
+
+For patient number 2: 
+Arrival Time : 188.568
+Start treatment from DoctorA : 188.568
+Start treatment from DoctorB : 202.576
+Start treatment from DoctorA again : -1
+End of service Time : 217.085
+
+For patient number 3: 
+Arrival Time : 208.148
+Start treatment from DoctorA : 208.148
+Start treatment from DoctorB : 217.085
+Start treatment from DoctorA again : -1
+End of service Time : 232.957
+
+For patient number 4: 
+Arrival Time : 212.84
+Start treatment from DoctorA : 212.959
+Start treatment from DoctorB : 232.957
+Start treatment from DoctorA again : -1
+End of service Time : 247.03
+
+For patient number 5: 
+Arrival Time : 246.016
+Start treatment from DoctorA : 246.016
+Start treatment from DoctorB : 248.482
+Start treatment from DoctorA again : -1
+End of service Time : 267.73
+
+For patient number 6: 
+Arrival Time : 248.747
+Start treatment from DoctorA : 248.747
+Start treatment from DoctorB : 267.73
+Start treatment from DoctorA again : -1
+End of service Time : 282.265
+
+For patient number 7: 
+Arrival Time : 268.088
+Start treatment from DoctorA : 268.088
+Start treatment from DoctorB : 282.265
+Start treatment from DoctorA again : -1
+End of service Time : 292.68
+
+For patient number 8: 
+Arrival Time : 271.525
+Start treatment from DoctorA : 275.874
+Start treatment from DoctorB : 294.457
+Start treatment from DoctorA again : -1
+End of service Time : 307.151
+
+For patient number 9: 
+Arrival Time : 294.228
+Start treatment from DoctorA : 294.457
+Start treatment from DoctorB : 311.691
+Start treatment from DoctorA again : -1
+End of service Time : 327.9
+
+For patient number 10: 
+Arrival Time : 297.943
+Start treatment from DoctorA : 346.748
+Start treatment from DoctorB : 327.9
+Start treatment from DoctorA again : -1
+End of service Time : 351.71
+
+For patient number 11: 
+Arrival Time : 321.806
+Start treatment from DoctorA : 321.806
+Start treatment from DoctorB : 345.79
+Start treatment from DoctorA again : 360.083
+End of service Time : 366.224
+
+For patient number 12: 
+Arrival Time : 325.675
+Start treatment from DoctorA : 388.096
+Start treatment from DoctorB : 360.083
+Start treatment from DoctorA again : -1
+End of service Time : 390.249
+
+For patient number 13: 
+Arrival Time : 332.258
+Start treatment from DoctorA : 333.357
+Start treatment from DoctorB : 380.006
+Start treatment from DoctorA again : -1
+End of service Time : 390.387
+
+For patient number 14: 
+Arrival Time : 363.051
+Start treatment from DoctorA : 366.224
+Start treatment from DoctorB : 390.387
+Start treatment from DoctorA again : 408.368
+End of service Time : 420.543
+
+For patient number 15: 
+Arrival Time : 375.992
+Start treatment from DoctorA : 439.495
+Start treatment from DoctorB : 408.368
+Start treatment from DoctorA again : -1
+End of service Time : 442.267
+
+For patient number 16: 
+Arrival Time : 416.228
+Start treatment from DoctorA : 420.543
+Start treatment from DoctorB : 432.743
+Start treatment from DoctorA again : -1
+End of service Time : 451.046
+
+For patient number 17: 
+Arrival Time : 422.424
+Start treatment from DoctorA : 432.743
+Start treatment from DoctorB : 451.046
+Start treatment from DoctorA again : -1
+End of service Time : 464.822
+
+For patient number 18: 
+Arrival Time : 443.122
+Start treatment from DoctorA : 443.122
+Start treatment from DoctorB : 464.822
+Start treatment from DoctorA again : -1
+End of service Time : 475.83
+
+For patient number 19: 
+Arrival Time : 458.735
+Start treatment from DoctorA : 458.735
+Start treatment from DoctorB : 475.83
+Start treatment from DoctorA again : -1
+End of service Time : 486.859
+
+For patient number 20: 
+Arrival Time : 492.771
+Start treatment from DoctorA : 492.771
+Start treatment from DoctorB : 499.274
+Start treatment from DoctorA again : -1
+End of service Time : 512.255
+
+For patient number 21: 
+Arrival Time : 494.937
+Start treatment from DoctorA : 499.274
+Start treatment from DoctorB : 512.255
+Start treatment from DoctorA again : -1
+End of service Time : 528.886
+
+For patient number 22: 
+Arrival Time : 501.679
+Start treatment from DoctorA : 509.459
+Start treatment from DoctorB : 528.886
+Start treatment from DoctorA again : -1
+End of service Time : 544.19
+
+For patient number 23: 
+Arrival Time : 505.546
+Start treatment from DoctorA : 526.437
+Start treatment from DoctorB : 544.19
+Start treatment from DoctorA again : -1
+End of service Time : 555.131
+
+For patient number 24: 
+Arrival Time : 516.23
+Start treatment from DoctorA : 541.833
+Start treatment from DoctorB : 599.326
+Start treatment from DoctorA again : -1
+End of service Time : 610.275
+
+For patient number 25: 
+Arrival Time : 517.76
+Start treatment from DoctorA : 673.09
+Start treatment from DoctorB : 610.275
+Start treatment from DoctorA again : -1
+End of service Time : 679.397
+
+For patient number 26: 
+Arrival Time : 540.635
+Start treatment from DoctorA : 600.636
+Start treatment from DoctorB : 628.378
+Start treatment from DoctorA again : -1
+End of service Time : 646.266
+
+For patient number 27: 
+Arrival Time : 555.466
+Start treatment from DoctorA : 622.476
+Start treatment from DoctorB : 646.266
+Start treatment from DoctorA again : -1
+End of service Time : 656.832
+
+For patient number 28: 
+Arrival Time : 559.97
+Start treatment from DoctorA : 626.977
+Start treatment from DoctorB : 656.832
+Start treatment from DoctorA again : -1
+End of service Time : 673.603
+
+For patient number 29: 
+Arrival Time : 598.941
+Start treatment from DoctorA : 637.684
+Start treatment from DoctorB : 673.603
+Start treatment from DoctorA again : -1
+End of service Time : 689.093
+
+For patient number 30: 
+Arrival Time : 600.24
+Start treatment from DoctorA : 655.043
+Start treatment from DoctorB : 689.093
+Start treatment from DoctorA again : -1
+End of service Time : 705.404
+

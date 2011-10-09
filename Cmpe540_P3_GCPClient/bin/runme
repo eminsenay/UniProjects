@@ -1,0 +1,5 @@
+#!/bin/bash
+rm -rf *.class
+javac GamePlayer.java
+java GamePlayer 4000
+

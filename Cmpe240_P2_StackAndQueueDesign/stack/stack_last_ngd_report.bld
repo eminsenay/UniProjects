@@ -1,0 +1,19 @@
+Release 4.2.03i - ngdbuild E.38
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd c:/programlar/xilinx/bin/stack/_ngo -nt timestamp -p
+xc2s30-tq144-5 stack.ngc stack.ngd 
+
+Reading NGO file "C:/Programlar/Xilinx/bin/stack/stack.ngc" ...
+Reading component libraries for design expansion...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "stack.ngd" ...
+
+Writing NGDBUILD log file "stack.bld"...

@@ -1,0 +1,231 @@
+I am not very sure of your illness.
+No illness has more probability than 0.8
+Are you sneezing a lot ? (yES/nO/aBORT) y
+Are your eyes painful or watering a lot ?  (yES/nO/aBORT) y
+Do you have a sore throat ?  (yES/nO/aBORT) y
+
+
+You are with 99.8301500918576% COMMON COLD
+If you want to continue, continue aswering; o/w press a
+
+Is your voice hoarse ?  (yES/nO/aBORT) n
+Are you coughing a lot ?  (yES/nO/aBORT) y
+
+
+You are with 99.9971644322586% COMMON COLD
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 97.9991833401388% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+Do you have a runny nose  (yES/nO/aBORT) y
+
+
+You are with 99.9795875008852% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9999716435266% COMMON COLD
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.862688802896% INFLUENZA
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 97.5847767748231% SINUSITIS
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.862688802896% ALLERGIC RHINITIS
+If you want to continue, continue aswering; o/w press a
+
+Do you have a headache or - in general - Do you suffer from headaches at all ?  (yES/nO/aBORT) y
+
+
+You are with 99.8764029513477% SINUSITIS
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9931254726238% INFLUENZA
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9999985821759% COMMON COLD
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9989791770876% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 98.8875154511743% MIGRAINE
+If you want to continue, continue aswering; o/w press a
+
+Do you have a high temperature (over 100 f say) (yES/nO/aBORT) n
+
+
+You are with 99.9979787908537% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9999971927084% COMMON COLD
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9863893527494% INFLUENZA
+If you want to continue, continue aswering; o/w press a
+
+Do you spend a lot of your time in a very dusty atmosphere  (yES/nO/aBORT) n
+does your skin itch  (yES/nO/aBORT) n
+
+
+You are with 99.5482995906076% ALLERGIC RHINITIS
+If you want to continue, continue aswering; o/w press a
+
+ Do you have a dry throat  (yES/nO/aBORT) n
+
+
+You are with 98.5247155406729% ALLERGIC RHINITIS
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.993330319876% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+Is your breath wheezy' ?  (yES/nO/aBORT) n
+
+
+You are with 96.4264333661254% ALLERGIC RHINITIS
+If you want to continue, continue aswering; o/w press a
+
+Is your nose very 'blocked up' ?  (yES/nO/aBORT) n
+
+
+You are with 98.7897026553437% SINUSITIS
+If you want to continue, continue aswering; o/w press a
+
+Have you had a cold or similar infection recently ?  (yES/nO/aBORT) n
+Do you feel generally ill  (yES/nO/aBORT) n
+
+
+You are with 99.9669937789532% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9326634975979% INFLUENZA
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9999861039082% COMMON COLD
+If you want to continue, continue aswering; o/w press a
+
+Do you have trouble swallowing ?  (yES/nO/aBORT) n
+Do your muscles ache ?  (yES/nO/aBORT) n
+
+
+You are with 99.6675685116711% INFLUENZA
+If you want to continue, continue aswering; o/w press a
+
+Do you have any pain at all in your chest ?  (yES/nO/aBORT) nn
+
+
+You are with 99.1812467121534% INFLUENZA
+If you want to continue, continue aswering; o/w press a
+
+Have you had your tonsils removed ?  (yES/nO/aBORT) n
+Do you have any symptoms which tend to occur in 'attacks' rather than being present all the time ?  (yES/nO/aBORT) n
+Do you have a 'productive' cough - a cough in which you bring something up ?  (yES/nO/aBORT) n
+Are you rather breathless ?  (yES/nO/aBORT) n
+Do you sweat a lot - not just when you exert yourself between you are apparently relaxing as well ?  (yES/nO/aBORT) n
+Is your pulse rate high ? normally it should be about 0 to 80 beats each mlnute and sllghtly faster for people over 70 or under 20 (yES/nO/aBORT) n
+Do you have severe attacks of breathlessness - enough to seriously worry you  (yES/nO/aBORT) n
+does your skin have a bluish tinge (yES/nO/aBORT) n
+When you cough is your phlegm stained with blood  (yES/nO/aBORT) n
+Are you confused - muddled about what's going on around you ?  (yES/nO/aBORT) n
+Are you (or the patent) delirious - talking incoherently with poor muscular coordination  (yES/nO/aBORT) n
+Do you have a dry (non-productive) cough  (yES/nO/aBORT) n
+Is it painful when you breathe or cough ?  (yES/nO/aBORT) n
+Do you ever have any really severe pain in your chest ?  (yES/nO/aBORT) n
+Do you swing between feeling chilled and feeling feverish ?  (yES/nO/aBORT) n
+Do you have any symptoms which have been present for some time - possibly six weeks or more ?   (yES/nO/aBORT) n
+
+
+You are with 99.18936787426% INFLUENZA
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9999862428691% COMMON COLD
+If you want to continue, continue aswering; o/w press a
+
+
+
+You are with 99.9673237333117% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+Do you have 'clubbed fingers' ?  - these are fingers in which the cuticles have almost disappeared and the nails curve over at the finger tips  (yES/nO/aBORT) n
+Do you have any symptoms which mainly occur when you exert yourself ?   (yES/nO/aBORT) n
+Do you smoke ?  to reply divide the number of cigarettes you smoke by 5 - use this number to reply if you smoke 20 a day reply 4). 5 is the maximum reply and -5 means you do not smoke.  (yES/nO/aBORT) n
+Do you suffer from feelings of dizziness ?   (yES/nO/aBORT) n
+Do you have palpitations ? - the feeling that your heart is beating more strongly or faster or more unevenly than it should.  (yES/nO/aBORT) n
+Is either of your ankles unduly swollen ?  (yES/nO/aBORT) n
+ Are you vomiting or do you have strong feelings of nausea ?  (yES/nO/aBORT) n
+Do you have any abdominal pain ? This is pain anywhere between the bottom of the ribcage and the groin.  (yES/nO/aBORT) n
+Do you suffer from diarrhea ? - Passing unusually runny faces.  (yES/nO/aBORT) n
+
+
+You are with 99.8384609803302% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+Have you had your appendix removed ?   (yES/nO/aBORT) n
+Do you have jaundice ? this is not a disease but a symptom of a disease. often it is most obvious in the eyes the whites become yellow.  (yES/nO/aBORT) n
+Are you rather tense and apprehensive ?  (yES/nO/aBORT) n
+Do you find it hard to get to sleep or do you often wake in the middle of the night ?  (yES/nO/aBORT) n
+Do you have any involuntary twitching or trembling ?   (yES/nO/aBORT) n
+Do you suffer from constipation ?  passing faeces infrequently or with difficulty.  (yES/nO/aBORT) n
+Do you have a poor memory ? that is - difficulty in remembering individual faces either occasionally or regularly.  (yES/nO/aBORT) n
+Have you totally or nearly lost the power of speech  (yES/nO/aBORT) n
+Have you experienced any bleeding from your back passage ?   (yES/nO/aBORT) n
+Is your neck stiff and/or painful ?   (yES/nO/aBORT) n
+Have you sustained any kind of head injury over the last few weeks ? even a very slight injury can be important.  (yES/nO/aBORT) n
+Have you recently been passing abnormal-looking faeces ?   (yES/nO/aBORT) n
+Are you passing large quantities of wind - either by belching or flatulence ?   (yES/nO/aBORT) n
+Do you have sudden feelings of faintness - feeling weak and unsteady maybe even losing consciousness ?  (yES/nO/aBORT) n
+does any part of your body itch - with or without the presence of any rash ?   (yES/nO/aBORT) n
+Do you have a skin rash of any sort ?  (yES/nO/aBORT) n
+
+
+You are with 98.4234300090676% MEASLES
+If you want to continue, continue aswering; o/w press a
+
+Is any part of your body numb - or Do you have a tingling 'pins and needles' sensation anywhere ?  (yES/nO/aBORT) n
+Are you overweight or underweight ? reply 5 for definite overweight and -5 for definite underweight. Reply 0 if your weight is just right.  (yES/nO/aBORT) n
+Do you have any pain in your face or forehead ?  (yES/nO/aBORT) n
+Do you have any swellings under the skin ? (yES/nO/aBORT) n
+Are you urinating unusually frequently  (yES/nO/aBORT) n
+Is your urine abnormally colored (yES/nO/aBORT) n
+Is it painful when you urinate ?   (yES/nO/aBORT) n
+Is your vision impaired in any way blurring or double vision or seeing flashing lights ?  (this does not include defects which can be corrected by spectacles).  (yES/nO/aBORT) n
+
+
+You are with 99.18936787426% INFLUENZA
+
+You are with 99.9999862428691% COMMON COLD
+
+You are with 98.4234300090676% MEASLES

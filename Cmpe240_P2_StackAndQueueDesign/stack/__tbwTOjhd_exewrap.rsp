@@ -1,0 +1,1 @@
+-tapkeep -mode pipe -command C:/Programlar/Xilinx/bin/nt/tb.exe /j "c:\programlar\xilinx\bin\stack\stacktest.tbw"

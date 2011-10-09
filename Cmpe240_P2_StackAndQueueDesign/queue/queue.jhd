@@ -1,0 +1,6 @@
+MODULE queue
+   SUBMODULE busdflipflop
+   SUBMODULE eighttoonebusmux
+   SUBMODULE pulsecatch
+   SUBMODULE threebitupdowncounter
+   SUBMODULE twotoonebusmux

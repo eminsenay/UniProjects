@@ -1,0 +1,16 @@
+Type="Job";
+JobType="Normal";
+Executable = "RUNSINGLEHOUR";
+StdOutput = "out.txt";
+StdError = "err.txt";
+InputSandbox = {
+				"RUNSINGLEHOUR","a.out","template.txt","katsay.tmp",
+				"DB.class","insertQuery.class",
+				"mysql-connector-java-3.1.12-bin.jar"
+				};
+OutputSandbox = {
+	           "out.txt","err.txt","1","2","3"
+	           };
+#Arguments = "2007 05 12 05 0";
+Arguments = "2007 05 29 11 0";
+RetryCount = 3;

@@ -1,0 +1,2 @@
+Only Project A implementation is given in the src directory. Project B implementation is appereantly lost.
+src/others contains some files which are not directly related to the project, but I suppose they were required/generated during the first implementation phase, so I kept them.

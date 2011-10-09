@@ -1,0 +1,1 @@
+-tapkeep -mode pipe -tcl -command C:/Programlar/Xilinx/data/projnav/constEditor.tcl queue queue.ucf C:/Programlar/Xilinx/data/ucf.tft C:/Programlar/Xilinx/bin/nt 

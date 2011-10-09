@@ -1,0 +1,4 @@
+-proj "c:\programlar\xilinx\bin\queue"
+-name "qtest.tbw"
+-file "queue.vhd"
+-entity "queue"

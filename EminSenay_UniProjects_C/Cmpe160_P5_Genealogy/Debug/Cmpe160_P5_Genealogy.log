@@ -1,0 +1,17 @@
+﻿Build started 10/3/2011 11:01:36 PM.
+Project "c:\Users\Emin\documents\visual studio 2010\Projects\EminSenay_UniProjects_C\Cmpe160_P5_Genealogy\Cmpe160_P5_Genealogy.vcxproj" on node 2 (build target(s)).
+InitializeBuildStatus:
+  Creating "Debug\Cmpe160_P5_Genealogy.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  All outputs are up-to-date.
+Link:
+  All outputs are up-to-date.
+  Cmpe160_P5_Genealogy.vcxproj -> c:\users\emin\documents\visual studio 2010\Projects\EminSenay_UniProjects_C\Debug\Cmpe160_P5_Genealogy.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\Cmpe160_P5_Genealogy.unsuccessfulbuild".
+  Touching "Debug\Cmpe160_P5_Genealogy.lastbuildstate".
+Done Building Project "c:\Users\Emin\documents\visual studio 2010\Projects\EminSenay_UniProjects_C\Cmpe160_P5_Genealogy\Cmpe160_P5_Genealogy.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.82

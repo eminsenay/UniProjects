@@ -1,0 +1,21 @@
+28.11.05 - ASSIGNMENT 1 
+
+You will write a new system call that prints the PID of 
+the process that is currently running. Note that, assuming you have a 
+uni-processor system there is only one such process. You will also write 
+a user-space test program to test it.
+Due Date: 5th December 2005 Monday 12:00
+You will submit:
+1) A bootable diskette (or CD) that contains your modified kernel
+2) Another diskette that contains your source codes and electronic copy 
+of your report.
+3) a single page report that technically summarizes what you did. (no 
+source code inside)
+
+Your source codes include:
+a) changes you made in the kernel (just the changes not the whole kernel 
+source code)
+b) your user-space test program. This program will be a C program that 
+learns its PID via existing system calls and prints it and then calls 
+your new system call.
+

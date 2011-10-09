@@ -1,0 +1,9 @@
+Type="Job";
+JobType="MPICH";
+NodeNumber = 32;
+Executable = "cmpe478hw2_1000001.out1000001.out1000001.out1000001.out1000001.out1000001.out1000001.out1000002.out1000002.out1000002.out1000002.out1000002.out1000002.out";
+StdOutput = "1000000_2_32.out";
+StdError = "1000000_2_32.err";
+InputSandbox = {"cmpe478hw2_1000001.out1000001.out1000001.out1000001.out1000001.out1000001.out1000001.out1000002.out1000002.out1000002.out1000002.out1000002.out1000002.out"};
+OutputSandbox = {"1000000_2_32.out","1000000_2_32.err"};
+RetryCount = 3;

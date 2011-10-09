@@ -1,0 +1,1 @@
+-mode pipe -tapkeep -check warn -tcl -command C:/Programlar/Xilinx/data/projnav/chipsim.tcl twotoonebusmux._prj twotoonebusmux.prj

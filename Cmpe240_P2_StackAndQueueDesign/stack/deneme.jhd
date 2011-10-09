@@ -1,0 +1,9 @@
+MODULE deneme
+	SUBMODULE 6bitdflipflop
+		INSTANCE XLXI_6
+	SUBMODULE 6bitdflipflop
+		INSTANCE XLXI_7
+	SUBMODULE 6bitdflipflop
+		INSTANCE XLXI_8
+	SUBMODULE 6bitdflipflop
+		INSTANCE XLXI_9

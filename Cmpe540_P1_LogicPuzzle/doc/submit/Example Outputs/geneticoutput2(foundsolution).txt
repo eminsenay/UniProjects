@@ -1,0 +1,30 @@
+
+D:\ders\540\New Folder>javac com\eminsenay\cmpe540\p1\Constraint.java com\eminsenay\cmpe540\p1\CSPModel.java com\eminsenay\cmpe540\p1\GeneticAlgorithmSolver.java com\eminsenay\cmpe540\p1\ProblemGeneticAlgorithm.java  
+
+D:\ders\540\New Folder>java com.eminsenay.cmpe540.p1.ProblemGeneticAlgorithm 
+Horse : 2
+Milk : 3
+Norwegian : 1
+English : 3
+Dog : 4
+Yellow : 1
+Water : 1
+Blue : 2
+Ivory : 4
+Chesterfield : 2
+Orange Juice : 4
+Lucky Strike : 4
+Zebra : 5
+Kools : 1
+Ukranian : 2
+Japanese : 5
+Red : 3
+Parliament : 5
+Green : 5
+Snails : 3
+Tea : 2
+Winston : 3
+Coffee : 5
+Spaniard : 4
+Fox : 1
+Solution is found.

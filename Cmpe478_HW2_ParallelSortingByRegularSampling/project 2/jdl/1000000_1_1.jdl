@@ -1,0 +1,9 @@
+Type="Job";
+JobType="MPICH";
+NodeNumber = 1;
+Executable = "cmpe478hw2_1000001.out";
+StdOutput = "1000000_1_1.out";
+StdError = "1000000_1_1.err";
+InputSandbox = {"cmpe478hw2_1000001.out"};
+OutputSandbox = {"1000000_1_1.out","1000000_1_1.err"};
+RetryCount = 3;

@@ -1,0 +1,7 @@
+In two of my examples, I used my own family to check the correctness of the prgram.
+Since they are private information, I deleted these examples from my document. 
+I also deleted original test files.
+
+If you want to test the program, please use other family trees or prepare your own file.
+
+Emin Þenay

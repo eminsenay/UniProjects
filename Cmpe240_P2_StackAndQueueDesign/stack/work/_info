@@ -1,0 +1,212 @@
+m255
+o
+cModel Technology
+dC:\Programlar\Xilinx\bin\stack
+Ebusdflipflop
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1117965800
+Fbusdflipflop.vhd
+l0
+L6
+V^iCVXZo4zS`Ch[A_BZ=E>2
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Abehavioral
+DE work busdflipflop ^iCVXZo4zS`Ch[A_BZ=E>2
+l14
+L12
+VSdhbi=QEUO7EiD8Q=H12L0
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Eeighttoonebusmux
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1117965704
+Feighttoonebusmux.vhd
+l0
+L6
+VoROQ5U]D075;YY`_DWM6h1
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Abehavioral
+DE work eighttoonebusmux oROQ5U]D075;YY`_DWM6h1
+l17
+L14
+Vh?^BCGTE97omHAQ;2SN5>3
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Epulsecatch
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1117968127
+Fpulsecatch.vhd
+l0
+L6
+VUT8Y@eamOG^bRA2`kVcWc3
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Abehavioral
+DE work pulsecatch UT8Y@eamOG^bRA2`kVcWc3
+l14
+L12
+VZ@VlOhY1[Te:iJDONa^X@3
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Estack
+DP ieee vital_timing OBWK>;kUYmkG<OChK2lhV1
+DP unisim vcomponents 1IeZGGFhZCZnH1BbZig;f2
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1118001364
+Fstack.vhd
+l0
+L8
+ViEmTU3_ZMUYC@9j27H?=11
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Abehavioral
+DE work twotoonebusmux I=HTEZ^zmH59E2R2Y7HOW3
+DE work busdflipflop ^iCVXZo4zS`Ch[A_BZ=E>2
+DE work eighttoonebusmux oROQ5U]D075;YY`_DWM6h1
+DE work threebitupdowncounter <5U=UD<hmIi@]1FTQHLFN2
+DE work pulsecatch UT8Y@eamOG^bRA2`kVcWc3
+DE unisim ibuf >X7@[RDgjbGlLcF[HB`0Q0
+DE work stack iEmTU3_ZMUYC@9j27H?=11
+l58
+L19
+VZ4[`VNn[QN>i=XiIjAU>[2
+OX;C;5.5e_p1;15
+31
+M5 ieee std_logic_1164
+M4 ieee std_logic_arith
+M3 ieee std_logic_unsigned
+M2 unisim vcomponents
+M1 ieee vital_timing
+o-skip e -93 -explicit -O0
+Cstack_cfg
+DE work stack iEmTU3_ZMUYC@9j27H?=11
+DA work testbench testbench_arch ZEX3GICW6azTH^;P0R<RT3
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee vital_timing OBWK>;kUYmkG<OChK2lhV1
+DP unisim vcomponents 1IeZGGFhZCZnH1BbZig;f2
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work testbench ViTR2:;H?kEh17L2Zi4<G3
+w1118009660
+Fstest.vhw
+l0
+L0
+VO3a^fNfJn]NZ0e]^HX7z=3
+OX;C;5.5e_p1;15
+31
+M7 ieee std_logic_1164
+M6 ieee std_logic_arith
+M5 ieee std_logic_unsigned
+M4 unisim vcomponents
+M3 ieee vital_timing
+M2 ieee std_logic_textio
+M1 std textio
+atestbench_arch
+etestbench
+o-skip e -93 -explicit -O0
+Etestbench
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee vital_timing OBWK>;kUYmkG<OChK2lhV1
+DP unisim vcomponents 1IeZGGFhZCZnH1BbZig;f2
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1118009660
+Fstest.vhw
+l0
+L26
+VViTR2:;H?kEh17L2Zi4<G3
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Atestbench_arch
+DE work stack iEmTU3_ZMUYC@9j27H?=11
+DE work testbench ViTR2:;H?kEh17L2Zi4<G3
+l57
+L29
+VZEX3GICW6azTH^;P0R<RT3
+OX;C;5.5e_p1;15
+31
+M7 ieee std_logic_1164
+M6 ieee std_logic_arith
+M5 ieee std_logic_unsigned
+M4 unisim vcomponents
+M3 ieee vital_timing
+M2 ieee std_logic_textio
+M1 std textio
+o-skip e -93 -explicit -O0
+Ethreebitupdowncounter
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1117965501
+Fthreebitupdowncounter.vhd
+l0
+L6
+V<5U=UD<hmIi@]1FTQHLFN2
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Abehavioral
+DE work threebitupdowncounter <5U=UD<hmIi@]1FTQHLFN2
+l17
+L12
+V[;B6h_jzdNlzQb<a@6>bJ3
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Etwotoonebusmux
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1117965888
+Ftwotoonebusmux.vhd
+l0
+L6
+VI=HTEZ^zmH59E2R2Y7HOW3
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Abehavioral
+DE work twotoonebusmux I=HTEZ^zmH59E2R2Y7HOW3
+l15
+L13
+VTc8B^Y^aGLYMcl=cjAT<L3
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0

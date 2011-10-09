@@ -1,0 +1,18 @@
+Fit All
+
+Document:  C:\Documents and Settings\emin\My Documents\ders\IE 306\final proje\part1\CASH.TXT
+Data File: C:\Documents and Settings\emin\My Documents\ders\IE 306\final proje\part1\CASH.TXT
+
+
+Function       Sq Error
+-----------------------
+Beta           0.00617
+Poisson        0.00687
+Normal         0.00702
+Weibull        0.00713
+Triangular     0.00812
+Erlang         0.00979
+Gamma          0.00983
+Lognormal      0.0141
+Uniform        0.0186
+Exponential    0.0357

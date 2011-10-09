@@ -1,0 +1,4 @@
+1. Implement the three methods commandStart, commandPlay and commandStop of the GamePlayer class.
+2. Start your gameplayer with the following command (replace [PORT] with the port your player should listen on):
+         java -classpath . GamePlayer [PORT]
+3. You can test your player by creating matches on http://games.stanford.edu:4000/

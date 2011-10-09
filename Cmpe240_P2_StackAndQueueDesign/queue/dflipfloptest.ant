@@ -1,0 +1,127 @@
+-- C:\PROGRAMLAR\XILINX\BIN\QUEUE\DFLIPFLOPTEST.ANT
+-- VHDL Annotation Test Bench created by
+-- HDL Bencher 4.1i
+-- Sun Jun 05 13:15:36 2005
+
+LIBRARY  IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+LIBRARY ieee;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY testbench IS
+END testbench;
+
+ARCHITECTURE testbench_arch OF testbench IS
+-- If you get a compiler error on the following line,
+-- from the menu do Options->Configuration select VHDL 87
+FILE RESULTS: TEXT OPEN WRITE_MODE IS "c:\programlar\xilinx\bin\queue\dflipfloptest.ano";
+	COMPONENT BusDFlipFlop
+		PORT (
+			D : in  std_logic_vector (5 DOWNTO 0);
+			res : in  std_logic;
+			clk : in  std_logic;
+			Q : out  std_logic_vector (5 DOWNTO 0)
+		);
+	END COMPONENT;
+
+	SIGNAL D : std_logic_vector (5 DOWNTO 0);
+	SIGNAL res : std_logic;
+	SIGNAL clk : std_logic;
+	SIGNAL Q : std_logic_vector (5 DOWNTO 0);
+
+BEGIN
+	UUT : BusDFlipFlop
+	PORT MAP (
+		D => D,
+		res => res,
+		clk => clk,
+		Q => Q
+	);
+
+	PROCESS -- clock process
+		VARIABLE TX_TIME : INTEGER :=0;
+
+		PROCEDURE ANNOTATE_Q(
+			TX_TIME : INTEGER
+		) IS
+			VARIABLE TX_STR : String(1 to 4096);
+			VARIABLE TX_LOC : LINE;
+		BEGIN
+			write(TX_LOC,string'("Annotate["));
+			write(TX_LOC, TX_TIME);
+			write(TX_LOC,string'(",Q,"));
+			write(TX_LOC, Q);
+			write(TX_LOC, string'("]"));
+			TX_STR(TX_LOC.all'range) := TX_LOC.all;
+			writeline(results, TX_LOC);
+			Deallocate(TX_LOC);
+		END;
+
+	BEGIN
+		CLOCK_LOOP : LOOP
+		clk <= transport '0';
+		WAIT FOR 10 ns;
+		TX_TIME := TX_TIME + 10;
+		clk <= transport '1';
+		WAIT FOR 10 ns;
+		TX_TIME := TX_TIME + 10;
+		ANNOTATE_Q(TX_TIME);
+		WAIT FOR 40 ns;
+		TX_TIME := TX_TIME + 40;
+		clk <= transport '0';
+		WAIT FOR 40 ns;
+		TX_TIME := TX_TIME + 40;
+		END LOOP CLOCK_LOOP;
+	END PROCESS;
+
+	PROCESS
+		VARIABLE TX_OUT : LINE;
+
+		BEGIN
+		-- --------------------
+		D <= transport std_logic_vector'("000001"); --1
+		res <= transport '1';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=100 ns
+		res <= transport '0';
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=200 ns
+		D <= transport std_logic_vector'("000000"); --0
+		-- --------------------
+		WAIT FOR 200 ns; -- Time=400 ns
+		D <= transport std_logic_vector'("000011"); --3
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=500 ns
+		D <= transport std_logic_vector'("000100"); --4
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=600 ns
+		D <= transport std_logic_vector'("000101"); --5
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=700 ns
+		D <= transport std_logic_vector'("000110"); --6
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=800 ns
+		D <= transport std_logic_vector'("000111"); --7
+		-- --------------------
+		WAIT FOR 100 ns; -- Time=900 ns
+		D <= transport std_logic_vector'("001000"); --8
+		-- --------------------
+		WAIT FOR 60 ns; -- Time=960 ns
+		-- --------------------
+
+		write(TX_OUT, string'("Total[]"));
+		writeline(results, TX_OUT);
+		ASSERT (FALSE) REPORT
+			"Success! Simulation for annotation completed"
+			SEVERITY FAILURE;
+	END PROCESS;
+END testbench_arch;
+
+CONFIGURATION BusDFlipFlop_cfg OF testbench IS
+	FOR testbench_arch
+	END FOR;
+END BusDFlipFlop_cfg;

@@ -1,0 +1,8 @@
+
+D:\ders\540\New Folder>javac com\eminsenay\cmpe540\p1\Constraint.java com\eminsenay\cmpe540\p1\CSPModel.java com\eminsenay\cmpe540\p1\MinConflictsSolver.java com\eminsenay\cmpe540\p1\ProblemMinConflicts.java 
+
+D:\ders\540\New Folder>java com.eminsenay.cmpe540.p1.ProblemMinConflicts 
+Value of Zebra is 5
+Variables having the same value: Japanese Parliament Green Coffee 
+Value of Water is 1
+Variables having the same value: Norwegian Yellow Kools Fox 

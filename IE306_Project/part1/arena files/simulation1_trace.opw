@@ -1,0 +1,12 @@
+[RESOURCES]
+trolley
+cashier
+[VARIABLES]
+service in cash.NumberIn
+more than 30 seconds?.NumberOut False
+more than 30 seconds?.NumberOut True
+packing.NumberIn
+exit supermarket.NumberOut
+service in cash.NumberOut
+packing.NumberOut
+Come to supermarket.NumberOut

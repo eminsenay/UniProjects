@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="doc">
+      <UniqueIdentifier>{348ee7e0-81a4-45a8-bdaf-660fbc10c0e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Examples">
+      <UniqueIdentifier>{2c864704-348c-47aa-b56b-7016b4f2c772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Examples\Example1">
+      <UniqueIdentifier>{9790597c-7c79-418d-a7cc-82e17e045a60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Examples\Example2">
+      <UniqueIdentifier>{bdc80469-b158-4fa2-9ff7-39a4db420d19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Examples\Example3">
+      <UniqueIdentifier>{3cf42764-b47f-42e3-8861-ca1424ecc14c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Examples\Example4">
+      <UniqueIdentifier>{c48905d4-42b8-445b-a5bc-721434f83d87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Programming Project.doc">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="cmpe300project.doc">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="example1\Output5sec.txt">
+      <Filter>Examples\Example1</Filter>
+    </None>
+    <None Include="example1\Output10sec.txt">
+      <Filter>Examples\Example1</Filter>
+    </None>
+    <None Include="example1\Output15sec.txt">
+      <Filter>Examples\Example1</Filter>
+    </None>
+    <None Include="example1\Output20sec.txt">
+      <Filter>Examples\Example1</Filter>
+    </None>
+    <None Include="example1\Output40sec.txt">
+      <Filter>Examples\Example1</Filter>
+    </None>
+    <None Include="example1\Output60sec.txt">
+      <Filter>Examples\Example1</Filter>
+    </None>
+    <None Include="example1\example1.txt">
+      <Filter>Examples\Example1</Filter>
+    </None>
+    <None Include="example2\Output10proc.txt">
+      <Filter>Examples\Example2</Filter>
+    </None>
+    <None Include="example2\Output20proc.txt">
+      <Filter>Examples\Example2</Filter>
+    </None>
+    <None Include="example2\Output30proc.txt">
+      <Filter>Examples\Example2</Filter>
+    </None>
+    <None Include="example2\example2.txt">
+      <Filter>Examples\Example2</Filter>
+    </None>
+    <None Include="example2\Output5proc.txt">
+      <Filter>Examples\Example2</Filter>
+    </None>
+    <None Include="example3\input30city.txt">
+      <Filter>Examples\Example3</Filter>
+    </None>
+    <None Include="example3\Output5city.txt">
+      <Filter>Examples\Example3</Filter>
+    </None>
+    <None Include="example3\Output10city.txt">
+      <Filter>Examples\Example3</Filter>
+    </None>
+    <None Include="example3\Output20city.txt">
+      <Filter>Examples\Example3</Filter>
+    </None>
+    <None Include="example3\Output30city.txt">
+      <Filter>Examples\Example3</Filter>
+    </None>
+    <None Include="example3\input5city.txt">
+      <Filter>Examples\Example3</Filter>
+    </None>
+    <None Include="example3\input10city.txt">
+      <Filter>Examples\Example3</Filter>
+    </None>
+    <None Include="example3\input20city.txt">
+      <Filter>Examples\Example3</Filter>
+    </None>
+    <None Include="example4\Output15citynormal.txt">
+      <Filter>Examples\Example4</Filter>
+    </None>
+    <None Include="example4\Output20citybcast.txt">
+      <Filter>Examples\Example4</Filter>
+    </None>
+    <None Include="example4\Output20citynormal.txt">
+      <Filter>Examples\Example4</Filter>
+    </None>
+    <None Include="example4\input15city.txt">
+      <Filter>Examples\Example4</Filter>
+    </None>
+    <None Include="example4\input20city.txt">
+      <Filter>Examples\Example4</Filter>
+    </None>
+    <None Include="example4\Output15citybcast.txt">
+      <Filter>Examples\Example4</Filter>
+    </None>
+    <None Include="README.txt">
+      <Filter>doc</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NodeType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

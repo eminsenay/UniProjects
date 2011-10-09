@@ -1,0 +1,23 @@
+ISE Auto-Make Log File
+-----------------------
+
+Updating: Edit Implementation Constraints (Constraints Editor)
+
+Starting: 'exewrap @__constEditor_exewrap.rsp'
+
+
+Creating TCL Process
+Starting: 'constraints_editor queue.ucf queue.ngd'
+
+
+Tcl C:/Programlar/Xilinx/data/projnav/constEditor.tcl detected that program 'constraints_editor queue.ucf queue.ngd' completed successfully.
+
+call Constraints Editor completed
+Starting: 'chkdate'
+
+
+Tcl C:/Programlar/Xilinx/data/projnav/constEditor.tcl detected that program 'chkdate' completed successfully.
+
+ Existing implementation results have been retained !
+ To incorporate your constraint changes, right click on the 'Implement Design' process and select 'Rerun All'.
+Done: completed successfully.

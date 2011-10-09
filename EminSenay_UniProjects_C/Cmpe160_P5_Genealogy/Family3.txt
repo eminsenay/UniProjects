@@ -1,0 +1,95 @@
+male husamettin exists
+female gulsen exists
+husamettin marries gulsen
+husamettin and gulsen beget daughter mevlude
+husamettin and gulsen beget daughter ulku
+gulsen and husamettin beget daughter ulker
+gulsen and husamettin beget daughter hatice
+husamettin and gulsen beget son turgut
+husamettin and gulsen beget son turan
+male mehmet exists
+female dilber exists
+mehmet marries dilber
+mehmet and dilber beget son ozer
+dilber and mehmet beget son sozer
+dilber and mehmet beget son mustafa
+sozer marries mevlude
+mevlude and sozer beget daughter yasemin
+mevlude and sozer beget daughter inci
+male riza exists
+riza marries yasemin
+riza and yasemin beget daughter sude
+mustafa marries ulku
+mustafa and ulku beget son evren
+mustafa and ulku beget son ercan
+female perihan exists
+male dervis exists
+perihan marries dervis
+perihan and dervis beget son tayfun
+perihan and dervis beget daughter ayse
+ulker marries tayfun
+ulker and tayfun beget son emre
+ulker and tayfun beget son burak
+female seher exists
+male duran exists
+seher marries duran
+seher and duran beget daughter gunay
+seher and duran beget son ali
+male atakan exists
+atakan marries gunay
+gunay and atakan beget daughter pinar
+ali marries hatice
+hatice and ali beget son emir
+female mediha exists
+male tahsin exists
+mediha marries tahsin
+mediha and tahsin beget son guner
+mediha and tahsin beget daughter gungor
+female meral exists
+guner marries meral
+guner and meral beget daughter mehtap
+male bulent exists
+bulent marries mehtap
+bulent and mehtap beget son cem
+gungor marries ozer
+ozer and gungor beget daughter dilek
+ozer and gungor beget son sirri
+ozer and gungor beget daughter ozgun
+female nermin exists
+male salih exists
+nermin marries salih
+nermin and salih beget daughter nezihe
+nermin and salih beget son ahmet
+nezihe marries sirri
+nezihe and sirri beget son eren
+male mahmut exists
+mahmut marries ozgun
+print ercan's grandparents
+print ercan's parents
+print ercan's siblings
+print ercan's brothers
+print ercan's sisters
+print ercan's uncles
+print ercan's aunts
+print ercan's children
+print ercan's sons
+print ercan's daughters
+print cem's grandparents
+print cem's parents
+print cem's siblings
+print cem's aunts
+print cem's uncles
+print cem's children
+print sude's grandparents
+print sude's aunts
+print sude's parents
+print ozer's aunts
+print eren's aunts
+print dilber's aunts
+print dilber's children
+print dilber's daughters
+print perihan's children
+print ulker's parents
+print tayfun's sons
+quit
+

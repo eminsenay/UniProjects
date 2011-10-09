@@ -1,0 +1,12 @@
+	pulsecatch	NULL	C:/Programlar/Xilinx/bin/stack/pulsecatch.vhd	sub00/vhpl00
+	pulsecatch	behavioral	C:/Programlar/Xilinx/bin/stack/pulsecatch.vhd	sub00/vhpl01
+	threebitupdowncounter	NULL	C:/Programlar/Xilinx/bin/stack/threebitupdowncounter.vhd	sub00/vhpl02
+	threebitupdowncounter	behavioral	C:/Programlar/Xilinx/bin/stack/threebitupdowncounter.vhd	sub00/vhpl03
+	eighttoonebusmux	NULL	C:/Programlar/Xilinx/bin/stack/eighttoonebusmux.vhd	sub00/vhpl04
+	eighttoonebusmux	behavioral	C:/Programlar/Xilinx/bin/stack/eighttoonebusmux.vhd	sub00/vhpl05
+	busdflipflop	NULL	C:/Programlar/Xilinx/bin/stack/busdflipflop.vhd	sub00/vhpl06
+	busdflipflop	behavioral	C:/Programlar/Xilinx/bin/stack/busdflipflop.vhd	sub00/vhpl07
+	twotoonebusmux	NULL	C:/Programlar/Xilinx/bin/stack/twotoonebusmux.vhd	sub00/vhpl08
+	twotoonebusmux	behavioral	C:/Programlar/Xilinx/bin/stack/twotoonebusmux.vhd	sub00/vhpl09
+	stack	NULL	C:/Programlar/Xilinx/bin/stack/stack.vhd	sub00/vhpl10
+	stack	behavioral	C:/Programlar/Xilinx/bin/stack/stack.vhd	sub00/vhpl11

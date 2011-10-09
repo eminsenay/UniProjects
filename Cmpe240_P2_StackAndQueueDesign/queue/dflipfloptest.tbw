@@ -1,0 +1,40 @@
+info x 33 201 0 0 0 0 0 0 VHDLvhdl_genericverilog_generic
+col x 257 0 0 0 0 0 0 0 
+radix x 10 0 0 0 0 0 0 0 
+entity name 0 0 0 0 0 0 0 0 BusDFlipFlop
+term mark 39 0 0 0 0 0 0 0 
+vlib save 0 0 0 0 0 0 0 0 LIBRARY  IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+var add 3 31 0 226 8 13 0 0 clkinstd_logic
+var add 1 5 0 36 7 12 0 0 Dinstd_logic_vector
+var add 4 5 0 36 9 6 0 0 Qoutstd_logic_vector
+var add 2 31 0 34 8 8 0 0 resinstd_logic
+vdone xxx 0 0 0 0 0 0 0 0 
+npos xxx 75 0 0 0 0 0 0 0 
+cell fill 2 0 0 0 0 0 0 0 000001
+cell fill 2 8 0 0 0 0 0 0 000000
+cell fill 2 16 0 0 0 0 0 0 000011
+cell fill 2 20 0 0 0 0 0 0 000100
+cell fill 2 24 0 0 0 0 0 0 000101
+cell fill 2 28 0 0 0 0 0 0 000110
+cell fill 2 32 0 0 0 0 0 0 000111
+cell fill 2 36 0 0 0 0 0 0 001000
+cell fill 3 22 0 0 0 0 0 0 000000
+cell fill 4 0 0 0 0 0 0 0 1
+cell fill 4 4 0 0 0 0 0 0 0
+time info 50 50 10 10 50 50 1 1 nsclk
+font save -14 0 400 49 0 0 0 0 Times New Roman
+src mod 0 3442107026 29714869 6 0 0 0 0 busdflipflop.vhd
+utd false 0 0 0 0 0 0 0 0 
+cellenab on 0 0 0 0 0 0 0 0 
+grid on 0 0 0 0 0 0 0 0 
+com add 1 0 10 171 5 0 -71 0 Waveform created by
+HDL Bencher 4.1i
+Source = DFlipFlop.vhd
+Sat Jun 04 18:58:02 2005
+type info 0 0 0 0 0 0 0 0 std_logicBITDOWNTO
+type info 31 0 0 0 0 0 0 0 std_logic_vectorVECTORDOWNTO
+opt vhdl87 0 0 0 0 0 0 0 0 

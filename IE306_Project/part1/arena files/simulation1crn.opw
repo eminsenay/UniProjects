@@ -1,0 +1,18 @@
+[RESOURCES]
+trolley
+cashier
+[VARIABLES]
+Dispose 2.NumberOut
+enough trolleys?.NumberOut True
+service in cash.NumberIn
+more than 30 seconds?.NumberOut False
+Number Out
+more than 30 seconds?.NumberOut True
+packing.NumberIn
+Find Average Waiting Time.NumberOut
+exit supermarket.NumberOut
+Total Waiting Time
+service in cash.NumberOut
+packing.NumberOut
+Come to supermarket.NumberOut
+enough trolleys?.NumberOut False

@@ -1,0 +1,28 @@
+[RESOURCES]
+dialup port
+upload
+download
+[VARIABLES]
+Authorization.NumberOut True
+Wait.NumberOut
+redial again?.NumberOut True
+Redial?.NumberOut False
+Redial?.NumberOut True
+Wait Uniform.NumberOut
+Have port?.NumberOut False
+log out.NumberOut
+Wait Uniform.NumberIn
+Have port again?.NumberOut False
+Login Delay.NumberOut
+redial again?.NumberOut False
+Dial.NumberOut
+Login Delay.NumberIn
+Authorization.NumberOut False
+not connected.NumberOut
+Wait Uniform 2.NumberOut
+User in Internet.NumberOut
+Have port again?.NumberOut True
+User in Internet.NumberIn
+Have port?.NumberOut True
+Wait.NumberIn
+Wait Uniform 2.NumberIn

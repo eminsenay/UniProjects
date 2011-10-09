@@ -1,0 +1,72 @@
+
+	Distribution Summary
+
+Distribution:	Beta         
+Expression:	11.5 + 20 * BETA(2.21, 2.35)
+Square Error:	0.006168
+
+Chi Square Test
+  Number of intervals	= 13
+  Degrees of freedom 	= 10
+  Test Statistic     	= 16.3
+  Corresponding p-value	= 0.0937
+
+	Data Summary
+
+Number of Data Points	= 200
+Min Data Value       	= 12
+Max Data Value       	= 31
+Sample Mean          	= 21.2
+Sample Std Dev       	= 4.31
+
+	Histogram Summary
+
+Histogram Range    	= 11.5 to 31.5
+Number of Intervals	= 20
+
+
+==================================================================
+Int.   No. of               Probability           Cumulative      
+No.    Data Pts.   x        Density               Distribution    
+------------------------------------------------------------------
+                            Data   Function       Data   Function   
+   0     1       12.0    0.00500    0.00534    0.00500    0.00534
+   1     4       13.0     0.0200     0.0182     0.0250     0.0236
+   2     9       14.0     0.0450     0.0314     0.0700     0.0550
+   3     7       15.0     0.0350     0.0437      0.105     0.0987
+   4    13       16.0     0.0650     0.0544      0.170      0.153
+   5    10       17.0     0.0500     0.0635      0.220      0.217
+   6    12       18.0     0.0600     0.0706      0.280      0.287
+   7    14       19.0     0.0700     0.0756      0.350      0.363
+   8    18       20.0     0.0900     0.0787      0.440      0.441
+   9    22       21.0      0.110     0.0796      0.550      0.521
+  10     8       22.0     0.0400     0.0785      0.590      0.599
+  11    23       23.0      0.115     0.0754      0.705      0.675
+  12     9       24.0     0.0450     0.0704      0.750      0.745
+  13    14       25.0     0.0700     0.0637      0.820      0.809
+  14     8       26.0     0.0400     0.0554      0.860      0.864
+  15    13       27.0     0.0650     0.0458      0.925      0.910
+  16     6       28.0     0.0300     0.0351      0.955      0.945
+  17     6       29.0     0.0300     0.0240      0.985      0.969
+  18     2       30.0     0.0100     0.0129      0.995      0.982
+  19     1       31.0    0.00500    0.00331       1.00      0.985
+
+
+=================================================================
+
+
+Data File: C:\Documents and Settings\emin\My Documents\ders\IE 306\final proje\CASH.TXT
+
+
+Function       Sq Error
+-----------------------
+Beta           0.00617
+Poisson        0.00687
+Normal         0.00702
+Weibull        0.00713
+Triangular     0.00812
+Erlang         0.00979
+Gamma          0.00983
+Lognormal      0.0141
+Uniform        0.0186
+Exponential    0.0357

@@ -1,0 +1,18 @@
+#!/bin/sh
+LCG_CATALOG_TYPE=lfc
+LFC_HOST=lfc.ulakbim.gov.tr
+LCG_GFAL_VO=trgridd
+LFC_HOME=/grid/trgridd
+VO_TRGRIDD_DEFAULT_SE=se.ulakbim.gov.tr
+export VO_TRGRIDD_DEFAULT_SE
+export LCG_CATALOG_TYPE
+export LFC_HOST
+export LCG_GFAL_VO
+export LFC_HOME
+export CLASSPATH=$CLASSPATH:./mysql-connector-java-3.1.12-bin.jar
+#echo $1
+#echo $2
+#echo $3
+#echo $4
+chmod +x ./a.out
+./a.out $1 $2 $3 $4 $5
