@@ -14,3 +14,5 @@ There are also 2 directories with IE. These contain the simulation course projec
 Intership_PictureApplet contains a Java applet I've developed during my internship at YKB. It is a simple image viewer applet.
 
 EminSenay_UniProjects_C directory contains most of the projects I've developed using C/C++ as a programming language. It also contains VS solution for these projects.
+
+Note: Don't expect bugfree and/or high quality code. It gets better as the years pass (and the course numbers increase) though.
